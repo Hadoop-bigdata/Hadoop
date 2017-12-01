@@ -6,8 +6,8 @@
 * 1.1 Download Docker 
 	
 	```
-  	For Mac: https://www.docker.com/docker-mac
-  	For Windows: https://www.docker.com/docker-windows
+  	For Mac: (https://www.docker.com/docker-mac)
+  	For Windows: (https://www.docker.com/docker-windows)
 	```
 	
 * 1.2 Install Docker on the local machine
