@@ -5,11 +5,11 @@
 
 * 1.1 Download Docker 
 	
-	```
+	
   	For Mac: https://www.docker.com/docker-mac
-	```
+	
   	For Windows: https://www.docker.com/docker-windows
-	```
+	
 	
 * 1.2 Install Docker on the local machine
 	
@@ -17,13 +17,13 @@
 	
 	
 	For Mac:
-	```
+	
 	First, click on Docker logo next to your time clock, then click on preferences.
 	In the perferences, click on advanced. The Docker default environment CPUs is 2 and Memory is 2GB.
 	For running the Hadoop, I update the CPUs to 4 and Memory to 6GB for my computer.
 	However, the Docker preferences depends on your computer.
 	The more Memory and CPUs you give to Docker, the faster running speed you have. 
-	```
+	
 	
 2. Install Hadoop Image in Docker
 
@@ -67,6 +67,8 @@
 	```
 	$cd hadoop-cluster-docker
 	//command 
+	```
+	```
 	$./start-container.sh
 	//command to start the container
  	```
@@ -105,9 +107,11 @@
 	Vim is the editor for Linux System. 
 	In the project, we need vim to edit the codes.
 	
+	```
 	#apt-get install vim
 	//command install vim
- 
+ 	```
+	
 * 3.3 Set up Web HDFS management environment
 
 	vi is the command for Linux system to create new file to edit the code
@@ -115,6 +119,8 @@
 	```
 	#cd /usr/local/hadoop/etc/hadoop/
  	//command to change directory
+	```
+	```
 	#vi core-site.xml
 	//command to open the xml file
 	```
@@ -123,16 +129,18 @@
 	type i to insert the command
 	add the command at the bottom of the core-site.xml file
 	type command : and the type wq save the file and quit the vim file.
-	‘’’
-	copy the code in the core-site.xml file
 	```
+	copy the code in the core-site.xml file
+	
 * 3.4 Restart Hadoop
 
 	Before Restart the Hadoop, make sure you already close Hadoop, to close the Hadoop follow step in 2.6.
 	
 	```
 	#./start-hadoop.sh
+	//command to start running Hadoop
+	```
 	After restart Hadoop, you can connect browser which belongs to HDFS.
 	Open the Browser http://localhost:50070/
 	It will login to the Hadoop page
-	```
+	
