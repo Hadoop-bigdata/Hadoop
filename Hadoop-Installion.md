@@ -1,5 +1,4 @@
 # Hadoop-Installion 
-#### Hadoop installion include the tutorial about install Docker in Hadoop and build Hadoop in Docker
 
 1. Install Docker
 
