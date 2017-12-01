@@ -32,9 +32,9 @@
 	Now, you are in the Linux system, which located in Docker container
 	Also you are in the master container
 7.	Running the Hadoop
-	# ./start-hadoop.sh
+	#./start-hadoop.sh
  
 8	Stop the Hadoop
-	# stop-all.sh
+	#stop-all.sh
 
 
