@@ -1,5 +1,5 @@
-# Hadoop Test
-#### Haddop Test use the file downlod from Internet to test the Hadoop Environmental
+# Hadoop Enviroment
+#### Haddop Enviroment use the file downlod from Internet to test the Hadoop Environmental
 
 Follow the step in Hadoop-Install
 
