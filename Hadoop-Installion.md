@@ -7,6 +7,7 @@
 	
 	```
   	For Mac: https://www.docker.com/docker-mac
+	```
   	For Windows: https://www.docker.com/docker-windows
 	```
 	
