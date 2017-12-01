@@ -46,7 +46,9 @@
 	$git clone https://github.com/kiwenlau/hadoop-cluster-docker
 	```
 	For the Mac users, if you meet the error
-	
+	```
+	xcrun: error: invalid active developer path (/Library/Developer/CommandLineTools), missing xcrun at : /Library/Developer/CommandLineTools/usr/bin/xcrun
+	```
 	You can try:
 	```
 	$xcode-select –install
