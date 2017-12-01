@@ -1,6 +1,5 @@
 	
 # MapReduce
-#### MapReduce is the aims test the dataset we upload in Hadoop
 
 7. Running MapReduce in Hadoop
 
