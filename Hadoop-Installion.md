@@ -34,7 +34,7 @@
 	
 	```
  	$docker pull kiwenlau/hadoop:1.0
-	//command pull Hadoop image into Docker
+	//command to pull Hadoop image into Docker
 	```
 	Thanks to kiwenlau who already build the Hadoop image in docker.
 	
@@ -51,7 +51,7 @@
 	You can try:
 	```
 	$xcode-select –install
-	//command download the xcode
+	//command to download the xcode
 	```
 	After try download the xcode, then tyep the same code:
 	```
@@ -61,7 +61,7 @@
 
 	```
 	$docker network create --driver=bridge Hadoop
- 	//command connect the master container with slave container
+ 	//command to connect the master container with slave container
 	```
 	
 * 2.4 Running the Master Container
