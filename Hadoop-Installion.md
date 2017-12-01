@@ -20,6 +20,7 @@
 	
 	First, click on Docker logo next to your time clock, then click on preferences.
 	In the perferences, click on advanced. The Docker default environment CPUs is 2 and Memory is 2GB.
+	
 	For running the Hadoop, I update the CPUs to 4 and Memory to 6GB for my computer.
 	However, the Docker preferences depends on your computer.
 	The more Memory and CPUs you give to Docker, the faster running speed you have. 
@@ -36,7 +37,8 @@
 	//command pull Hadoop image into Docker
 	```
 	Thanks to kiwenlau who already build the Hadoop image in docker.
-	In our project, we will use his image to do projects  
+	
+	In project, we will use his image to do MapReduce funtion. 
 	
 	
 * 2.2 Create clone storage
@@ -125,10 +127,16 @@
 	//command to open the xml file
 	```
 	
+	type `i` to insert the command
 	```
-	type i to insert the command
-	add the command at the bottom of the core-site.xml file
-	type command : and the type wq save the file and quit the vim file.
+	i
+	//command to insert the code in vim
+	```
+	
+	type `:wq` save the file and quit the vim file.
+	```
+	wq
+	//command to save code and quie the vim
 	```
 	copy the code in the core-site.xml file
 	
