@@ -5,12 +5,14 @@
 
 * 1.1 Download Docker 
 	
+	```
   	For Mac: https://www.docker.com/docker-mac
   	For Windows: https://www.docker.com/docker-windows
+	```
 	
 * 1.2 Install Docker on the local machine
 	
-*1.3 Set up Docker Environment
+* 1.3 Set up Docker Environment
 
 	For Mac:
 	First, click on Docker logo next to your time clock, then click on preferences.
@@ -23,7 +25,7 @@
 
 After install Docker on the local machine, you need to open the terminal (for mac) or command line (for Windows)
 
-2.1 Install Hadoop Image
+* 2.1 Install Hadoop Image
 
  	$docker pull kiwenlau/hadoop:1.0
 	//command pull Hadoop image into Docker
@@ -31,7 +33,7 @@ After install Docker on the local machine, you need to open the terminal (for ma
 	Thanks to kiwenlau who already build the Hadoop image in docker.
 	In our project, we will use his image to do projects  
 	
-2.2 Create clone storage
+* 2.2 Create clone storage
 	
 	$git clone https://github.com/kiwenlau/hadoop-cluster-docker
 	
@@ -45,12 +47,12 @@ After install Docker on the local machine, you need to open the terminal (for ma
 	After try download the xcode, then tyep the same code:
 	$git clone https://github.com/kiwenlau/hadoop-cluster-docker
  
-2.3 Connect the Internet
+* 2.3 Connect the Internet
 
 	$docker network create --driver=bridge Hadoop
  	//command connect the master container with slave container
 	
-2.4 Running the Master Container
+* 2.4 Running the Master Container
 
 	$cd hadoop-cluster-docker
 	//command 
@@ -60,7 +62,7 @@ After install Docker on the local machine, you need to open the terminal (for ma
 	When you type the command, you are in the Linux system, which located in Docker container xxxx
 	Also xxx is in the master container
 	
-2.5 Run the Hadoop in Docker
+* 2.5 Run the Hadoop in Docker
 	
 	#./start-hadoop.sh
 	//command to run the Hadoop in the container
@@ -75,14 +77,14 @@ After install Docker on the local machine, you need to open the terminal (for ma
 Hadoop Filesystem has its own web for user to manage their file. In order to take the benefit of web management.
 We will set up this environment in step 2.
 
-3.1 Update apt-get
+* 3.1 Update apt-get
 
 	Due to the Hadoop image is out of date, we need to do some update before setting up the environment.
 	
 	#apt-get update
  	//command to update the apt-get
 	
-3.2 Install vim
+* 3.2 Install vim
 
 	Vim is the editor for Linux System. 
 	In the project, we need vim to edit the codes.
@@ -90,7 +92,7 @@ We will set up this environment in step 2.
 	#apt-get install vim
 	//command install vim
  
-3.3 Set up Web HDFS management environment
+* 3.3 Set up Web HDFS management environment
 
 	vi is the command for Linux system to create new file to edit the code
 	
@@ -106,7 +108,7 @@ We will set up this environment in step 2.
 	‘’’
 	copy the code in the core-site.xml file
 	
-3.4 Restart Hadoop
+* 3.4 Restart Hadoop
 
 	Before Restart the Hadoop, make sure you already close Hadoop, to close the Hadoop follow step in 2.6.
 	
