@@ -6,6 +6,35 @@
 
 3.Install Hadoop Image
   After install Hadoop on the local machine, you need to open the terminal (for mac) or command line (for Windows)
-  pull hadoop image into Docker 
+  pull Hadoop image into Docker 
+  
   $docker pull kiwenlau/hadoop:1.0
+  
+
+4.Create clone storage
+	$git clone https://github.com/kiwenlau/hadoop-cluster-docker
+	
+	For the Mac users, if you meet the error
+	
+	You can try:
+	$xcode-select –install
+	it will download the xcode for your computer to set up the environment.
+	Then try the same code:
+	$git clone https://github.com/kiwenlau/hadoop-cluster-docker
+ 
+5.Connect the Internet
+	$docker network create --driver=bridge Hadoop
+ 
+6.Running the Container
+	$cd hadoop-cluster-docker
+	$./start-container.sh
+ 
+	Now, you are in the Linux system, which located in Docker container
+	Also you are in the master container
+7.	Running the Hadoop
+	# ./start-hadoop.sh
+ 
+8	Stop the Hadoop
+	# stop-all.sh
+
 
