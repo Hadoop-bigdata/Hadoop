@@ -25,7 +25,7 @@
 	
 2. Install Hadoop Image in Docker
 
-After install Docker on the local machine, you need to open the terminal (for mac) or command line (for Windows)
+	After install Docker on the local machine, you need to open the terminal (for mac) or command line (for Windows)
 
 * 2.1 Install Hadoop Image
 	
@@ -86,8 +86,8 @@ After install Docker on the local machine, you need to open the terminal (for ma
 	
 3. HDFS management
 
-Hadoop Filesystem has its own web for user to manage their file. In order to take the benefit of web management.
-We will set up this environment in step 2.
+	Hadoop Filesystem has its own web for user to manage their file. In order to take the benefit of web management.
+	We will set up this environment in step 2.
 
 * 3.1 Update apt-get
 
