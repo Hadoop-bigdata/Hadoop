@@ -50,7 +50,8 @@
 	//command to stop the Hadoop in the container,
 	
 2 HDFS management
-Hadoop Filesystem has its own web for user to manage their file. In order to take the benefit of web management, we will set up this environment.
+Hadoop Filesystem has its own web for user to manage their file. In order to take the benefit of web management.
+We will set up this environment in step 2.
 
 	2.1 Update apt-get
 	Due to the Hadoop image is out of date, we need to do some update before setting up the environment.
@@ -156,7 +157,7 @@ Before doing any steps list belowed, make sure we are in the master container in
 	//command show the first 50 element in file and use mapper and reducer to get the result
 
 5 Running Mapper Reducer in Hadoop
-Before doing any steps list below, make sure you are in the master container
+Before doing any steps list below, make sure you are in the master container.
 
 	cd ~
 	#command go back home directory
