@@ -23,4 +23,3 @@ def mapper():
 
 import StringIO
 mapper()
-sys.stdin = sys.__stdin__
