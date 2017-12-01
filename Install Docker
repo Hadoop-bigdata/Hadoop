@@ -9,33 +9,43 @@
   pull Hadoop image into Docker 
   
   $docker pull kiwenlau/hadoop:1.0
-  
 
 4.Create clone storage
+	
 	$git clone https://github.com/kiwenlau/hadoop-cluster-docker
 	
 	For the Mac users, if you meet the error
 	
 	You can try:
 	$xcode-select –install
-	it will download the xcode for your computer to set up the environment.
-	Then try the same code:
+	It will download the xcode for your computer to set up the environment.
+	
+	After try download the xcode, then tyep the same code:
 	$git clone https://github.com/kiwenlau/hadoop-cluster-docker
  
 5.Connect the Internet
+
 	$docker network create --driver=bridge Hadoop
  
-6.Running the Container
+6.Running the Master Container
+
 	$cd hadoop-cluster-docker
 	$./start-container.sh
  
-	Now, you are in the Linux system, which located in Docker container
-	Also you are in the master container
-7.	Running the Hadoop
+	When you type the command, you are in the Linux system, which located in Docker container xxxx
+	Also xxx is in the master container
+	
+7.Run the Hadoop in Docker
+	
 	#./start-hadoop.sh
+	
+	This is the command to run the Hadoop in the container
  
-8	Stop the Hadoop
+8.Stop the Hadoop in Docker
+
 	#stop-all.sh
+	
+	This is the command to stop the Hadoop in the container
 	
 
 
