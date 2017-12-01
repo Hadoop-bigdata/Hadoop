@@ -1,0 +1,24 @@
+Before doing any steps list belowed, make sure we are in the master container in Docker.
+
+1.Download the Data File from Internet
+
+        #cd ~                   
+        //going back to the home directory
+        #mkdir test             
+        //create new directory name test
+        #cd test                
+        //open the test directory                
+        #wget http://content.udacity-data.com/courses/ud617/purchases.txt.gz    
+        //download the file from Internet
+ 
+2.Extract the Data File
+
+        #gzip –d purchases.txt.gz
+        //extract the file
+ 
+3.Test the Data File
+        
+        #head -10 purchases.txt
+        //check the file with first 10 lines
+ 
+
