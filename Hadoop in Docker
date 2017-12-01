@@ -19,7 +19,7 @@ After install Docker on the local machine, you need to open the terminal (for ma
 
 	2.1 Install Hadoop Image
 
- 	$docker pull kiwenlau/hadoop:1.0
+ 	`$docker pull kiwenlau/hadoop:1.0`
 	//command pull Hadoop image into Docker
 	Thanks to kiwenlau who already build the Hadoop image in docker.
 	In our project, we will use his image to do projects  
