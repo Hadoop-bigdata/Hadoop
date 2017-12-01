@@ -14,14 +14,14 @@
 	
 * 1.3 Set up Docker Environment
 	
-	```
+	
 	For Mac:
 	First, click on Docker logo next to your time clock, then click on preferences.
 	In the perferences, click on advanced. The Docker default environment CPUs is 2 and Memory is 2GB. 
 	For running the Hadoop, I update the CPUs to 4 and Memory to 6GB for my computer.
 	However, the Docker preferences depends on your computer.
 	The more Memory and CPUs you give to Docker, the faster running speed you have. 
-	```
+	
 	
 2. Install Hadoop Image in Docker
 
