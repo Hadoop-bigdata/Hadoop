@@ -1,5 +1,4 @@
 # Hadoop Enviroment
-#### Haddop Enviroment use the file downlod from Internet to test the Hadoop Environmental
 
 Before doing any steps list belowed, make sure we are in the master container in Docker.
 
