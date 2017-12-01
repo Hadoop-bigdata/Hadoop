@@ -86,7 +86,7 @@
 	//command to connect bash system for the slave2
 	```
   
-8.3 Restart Hadoop in master container
+* 8.3 Restart Hadoop in master container
 
 	Then use the master container to restart Hadoop
 	```
@@ -94,5 +94,5 @@
 	//Command to restart the Hadoop
   	```
 	
-8.4 Repeat the Step 6, 7 
+* 8.4 Repeat the Step 6, 7 
 	
