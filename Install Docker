@@ -1,12 +1,12 @@
 1.Download Docker 
-  	For Mac: https://www.docker.com/docker-mac
-  	For Windows: https://www.docker.com/docker-windows
+  For Mac: https://www.docker.com/docker-mac
+  For Windows: https://www.docker.com/docker-windows
 
 2.Install Docker on the local machine
 
 3.Install Hadoop Image
-  	After install Hadoop on the local machine, you need to open the terminal (for mac) or command line (for Windows)
-  	pull Hadoop image into Docker 
+  After install Hadoop on the local machine, you need to open the terminal (for mac) or command line (for Windows)
+  pull Hadoop image into Docker 
   
  	$docker pull kiwenlau/hadoop:1.0
 
