@@ -2,7 +2,7 @@
 # MapReduce
 #### MapReduce is the aims test the dataset we upload in Hadoop
 
-7. Running Mapper Reducer in Hadoop
+7. Running MapReduce in Hadoop
 
 	Before doing any steps list below, make sure you are in the master container.
 	Also you need to make sure you already open three teriminals, one for master, one for slave1 and one for slave2
