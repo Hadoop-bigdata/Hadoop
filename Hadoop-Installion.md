@@ -1,13 +1,13 @@
 # Hadoop-Installion 
-## Hadoop installion include the tutorial about install Docker in Hadoop and build Hadoop in Docker
+#### Hadoop installion include the tutorial about install Docker in Hadoop and build Hadoop in Docker
 
 1 Install Docker
 
 * 1.1 Download Docker 
 	
 	```
-  	For Mac: (https://www.docker.com/docker-mac)
-  	For Windows: (https://www.docker.com/docker-windows)
+  	For Mac: ( https://www.docker.com/docker-mac )
+  	For Windows: ( https://www.docker.com/docker-windows )
 	```
 	
 * 1.2 Install Docker on the local machine
