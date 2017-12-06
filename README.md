@@ -2,6 +2,8 @@
 
 #### This project help people who has intesest to learn big data project and want to build Hadoop Distribute File System in Mac or Windonws.
 
+Apache Hadoop is a software framework written in Java to process the big data via a cluster of Distribute Filesystem. It works like the batch layer in Lambda Architecture. Hadoop Distribute File System and MapReduce will help Lambda Architecture to achieve data extraction and storage.
+
 The project include: 
 
 1. Install Docker
