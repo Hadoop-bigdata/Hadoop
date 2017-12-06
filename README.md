@@ -36,5 +36,8 @@ Third part: Text Hadoop Distribute File System
 	
 8. Restart the Docker
 
-Fourth part
+Fourth part: Nature Language Processing on Amazon Review
+
+9. Download the Amazon Review
+
 
