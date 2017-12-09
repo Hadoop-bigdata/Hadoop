@@ -154,7 +154,6 @@ Before doing any steps list belowed, make sure we are in the master container in
 	```
 
 * 5.3 Creat Hadoop Image
-	
 	```
 	#exit
 	//command to get out of bash 
@@ -163,9 +162,37 @@ Before doing any steps list belowed, make sure we are in the master container in
 	$docker commit hadoop-master hadoop:python
 	//command to create docker image based on hadoop master
 	```
+	
+* 5.4 Set up Environment
+	```
+	$cd hadoop-cluster-docker
+	//command to open hadoop-cluster-docker directory 
+	```
+	```
+	$vi start-container.sh
+	//command to set up environment
+	```
+	copy the file attach in start-container.sh file
 
-
-
+	
+* 5.5 Check the Environment
+	
+	```
+	$conda list 
+	//check conda package
+	```
+	```
+	$jupyter notebook --no-browser --allow-root --ip=*
+	//start jupyter notebook on local machine based docker
+	```
+	After type the command above, the command will show a line to your local machine
+	```
+    	to login with a token:
+        http://localhost:8888/?token=94d2a0a6140510faf292c7bb5eb56058cb6071e856e6e473
+	```
+	
+	
+	
 4. Download Test Data
 
 * 4.1 Download the Data File from Internet
