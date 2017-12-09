@@ -5,7 +5,7 @@
    http://jmcauley.ucsd.edu/data/amazon/
     
    The link for amazon review file
-   http://snap.stanford.edu/data/amazon/productGraph/categoryFiles/'filename'.json.gz
+   http://snap.stanford.edu/data/amazon/productGraph/categoryFiles/ 'filename' .json.gz
     
    File name is the file you want to download
    For example:
@@ -17,14 +17,14 @@
     
    Make sure you are in Hadoop-Master bash
    
-        '''
-        mkdir NLP
-        //command to create new directory for Nature Language Process
-        cd NLP
-        //command to change directory
-        ''' 
+   ```
+   mkdir NLP
+   //command to create new directory for Nature Language Process
+   cd NLP
+   //command to change directory
+   ``` 
         
-        '''
-        wget http://snap.stanford.edu/data/amazon/productGraph/categoryFiles/reviews_Kindle_Store_5.json.gz
-        //command to download the file
-        '''
+   ```
+   wget http://snap.stanford.edu/data/amazon/productGraph/categoryFiles/reviews_Kindle_Store_5.json.gz
+   //command to download the file
+   ```
