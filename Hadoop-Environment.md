@@ -187,8 +187,8 @@ Before doing any steps list belowed, make sure we are in the master container in
 	```
 	After type the command above, the command will show a line to your local machine
 	```
-    	to login with a token:
-        http://localhost:8888/?token=94d2a0a6140510faf292c7bb5eb56058cb6071e856e6e473
+	to login with a token:
+	http://localhost:8888/?token=94d2a0a6140510faf292c7bb5eb56058cb6071e856e6e473
 	```
 	
 	
