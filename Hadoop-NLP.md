@@ -1,8 +1,8 @@
 # Nature Language Processing on Amazon Review
    
-## 9 Download File  
+## 9 NLP on Hadoop 
 
-* 1. Review Amazon Review Website  
+* 9.1 Review Amazon Review Website  
         
    Website: 
    http://jmcauley.ucsd.edu/data/amazon/
@@ -17,7 +17,7 @@
    http://snap.stanford.edu/data/amazon/productGraph/categoryFiles/reviews_Kindle_Store_5.json.gz
     
 
-* 2. Download Amazon Review file 
+* 9.2 Download Amazon Review file 
     
    Make sure you are in Hadoop-Master bash
    
