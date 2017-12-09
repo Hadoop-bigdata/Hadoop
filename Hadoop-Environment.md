@@ -31,8 +31,12 @@ Before doing any steps list belowed, make sure we are in the master container in
 	$docker start 0f3ae72bcf3b
 	//command to start the contianer
 	```
-	0f3ae72bcf3b is the name for the container, you can check it by command $docker ps –a
-	 
+	0f3ae72bcf3b is the name for the container, you can check it by command 
+	
+	```
+	$docker ps –a
+	```
+	
 * 4.3 Attach slave contianer
 	
 	```
