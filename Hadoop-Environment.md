@@ -2,6 +2,20 @@
 
 Before doing any steps list belowed, make sure we are in the master container in Docker.
 
+1. Instal Anaconda
+   
+   Make sure you are in Hadoop-Master bash
+   ```
+   mkdir python
+   //command to create new directory for python
+   cd python
+   //command to change directory
+   ```
+   ```
+   wget https://repo.continuum.io/archive/Anaconda3-5.0.1-Linux-x86_64.sh
+   //command to download Anaconda package
+   ```
+
 4. Download Test Data
 
 * 4.1 Download the Data File from Internet
