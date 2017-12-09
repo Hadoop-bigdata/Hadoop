@@ -1,7 +1,7 @@
 	
 # MapReduce
 
-6. Download Test Data
+## 6. Download Test Data
 
 * 6.1 Download the Data File from Internet
 	```
@@ -35,7 +35,7 @@
         //command to display the first 10 lines in file
 	```
 	
-7. Edit the Mapper Function and Reducer Function
+## 7. Edit the Mapper Function and Reducer Function
 
 * 7.1 Edit Mapper Function
 	
@@ -82,7 +82,7 @@
 	//command to show the first 50 element in file and use mapper and reducer to get the result
 	```
 
-8. Running MapReduce in Hadoop
+## 8. Running MapReduce in Hadoop
 
 	Before doing any steps list below, make sure you are in the master container.
 	Also you need to make sure you already open three teriminals, one for master, one for slave1 and one for slave2
@@ -133,7 +133,7 @@
 	//command to check result for MapReduce
 	```
   
-9. Restart the Docker
+## 9. Restart the Docker
 
 	When you finish running task, you will close the terminal.
 	Next time, if you want to do another job, you need to restart the docker
