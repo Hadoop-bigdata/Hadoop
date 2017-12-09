@@ -1,7 +1,8 @@
 # 
 * 1. Review Amazon Review file  
         
-        Website: 'http://jmcauley.ucsd.edu/data/amazon/'
+        Website: 
+        http://jmcauley.ucsd.edu/data/amazon/
     
         The link for amazon review file
         http://snap.stanford.edu/data/amazon/productGraph/categoryFiles/'filename'.json.gz
