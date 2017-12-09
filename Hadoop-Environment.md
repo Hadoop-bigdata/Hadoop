@@ -68,7 +68,7 @@ Before doing any steps list belowed, make sure we are in the master container in
 	
 4. Install Anaconda
 
-Make sure you are in Hadoop-Master bash
+	Make sure you are in Hadoop-Master bash
 
 * 4.1 Download Anacoda
 	
