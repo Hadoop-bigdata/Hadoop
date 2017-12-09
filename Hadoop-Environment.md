@@ -2,12 +2,12 @@
 
 Before doing any steps list belowed, make sure we are in the master container in Docker.
 
-4. Build Hadoop network
+3. Build Hadoop network
 
 	From kiwenlau's image, he already built one master contianer and two slave contianers in Hadoop environment. 
 	Before running the MapReduce function, we need to open two slave containers
 	
-* 4.1 Open extract temriminals or command line
+* 3.1 Open extra Terminals or Command Line
 
 	For Mac:
 	
@@ -15,7 +15,7 @@ Before doing any steps list belowed, make sure we are in the master container in
 	Then click new window, it will open one more terminal for your computer 
 	Repeat the step open one more terminal
 	
-* 4.2 Check container status
+* 3.2 Check Container Status
 	
 	```
 	$docker ps –a
@@ -23,22 +23,27 @@ Before doing any steps list belowed, make sure we are in the master container in
 	```
 	How to know the which container is master or slave, check the port columns, it will give the information
 	
-	check the status for each contianer
+	Check the status for each contianer
 	
-	if the status said: ' Exited (137) xx minutes(hours) ago' means the container is stop, you need to restart the container
+	If the status said: 
+	
+	' Exited (137) xx minutes(hours) ago' means the container is stop, you need to restart the container
 	
 	```
 	$docker start 0f3ae72bcf3b
 	//command to start the contianer
 	```
-	0f3ae72bcf3b is the name for the container, you can check it by command 
+	0f3ae72bcf3b is the address for the container, you can check it by command 
 	
 	```
 	$docker ps –a
 	```
 	
-* 4.3 Attach slave contianer
-	
+* 3.3 Attach Contianer
+	```
+	$docker exec -ti hadoop-master bash
+	//command to connect bash system for the slave1
+	```
 	```
 	$docker exec -ti hadoop-slave1 bash
 	//command to connect bash system for the slave1
@@ -48,12 +53,11 @@ Before doing any steps list belowed, make sure we are in the master container in
 	//command to connect bash system for the slave2
 	```
 
-3. HDFS management
+4. HDFS management
 
 	Hadoop Filesystem has its own web for user to manage their file. In order to take the benefit of web management.
-	We will set up this environment in step 2.
 
-* 3.1 Update apt-get
+* 4.1 Update apt-get
 
 	Due to the Hadoop image is out of date, we need to do some update before setting up the environment.
 	
@@ -62,7 +66,7 @@ Before doing any steps list belowed, make sure we are in the master container in
  	//command to update the apt-get
 	```
 	
-* 3.2 Install vim
+* 4.2 Install vim
 
 	Vim is the editor for Linux System. 
 	In the project, we need vim to edit the codes.
@@ -72,7 +76,7 @@ Before doing any steps list belowed, make sure we are in the master container in
 	//command install vim
  	```
 	
-* 3.3 Set up Web HDFS management environment
+* 4.3 Set up Web HDFS management environment
 
 	vi is the command for Linux system to create new file to edit the code
 	
@@ -87,18 +91,16 @@ Before doing any steps list belowed, make sure we are in the master container in
 	
 	type `i` to insert the command
 	```
-	i
 	//command to insert the code in vim
 	```
 	
 	type `:wq` save the file and quit the vim file.
 	```
-	wq
 	//command to save code and quie the vim
 	```
-	copy the code in the core-site.xml file
+	copy the code from the core-site.xml in github 
 	
-* 3.4 Restart Hadoop
+* 4.4 Restart Hadoop
 
 	Before Restart the Hadoop, make sure you already close Hadoop, to close the Hadoop follow step in 2.6.
 	
@@ -112,11 +114,11 @@ Before doing any steps list belowed, make sure we are in the master container in
 	
 	It will login to the Hadoop page
 	
-4. Install Anaconda
+5. Install Anaconda
 
-	Make sure you are in Hadoop-Master bash
-
-* 4.1 Download Anacoda
+	Make sure you are in Hadoop-Master bash, if you are not in Hadoop-master bash, do the step 3.3.
+	
+* 5.1 Download Anacoda
 	
    	```
    	#mkdir python
@@ -128,11 +130,25 @@ Before doing any steps list belowed, make sure we are in the master container in
    	#wget https://repo.continuum.io/archive/Anaconda3-5.0.1-Linux-x86_64.sh
    	//command to download Anaconda package
    	```
+* 5.2 Install Anaconda
+	
+	```
+	#bash Anaconda3-5.0.1-Linux-x86_64.sh
+	//command to install Anaconda
+	```
+	Press `Enter` key in keyboard until command line continue display
+	```
+	Do you accept the license terms? [yes|no]
+	```
+	choose `yes` 
+	Then, press `Enter` key in keyboard until command line continue display
+	```
+	Do you wish the installer to prepend the Anaconda3 install location to PATH in your /root/.bashrc ? [yes|no]
+	```
+	choose `yes` 
+	Then finish the installation
 
-
-
-
-
+* 5.3 Set up Environment
 
 
 
