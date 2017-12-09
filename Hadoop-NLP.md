@@ -5,6 +5,7 @@
    http://jmcauley.ucsd.edu/data/amazon/
     
    The link for amazon review file
+   
    http://snap.stanford.edu/data/amazon/productGraph/categoryFiles/ 'filename' .json.gz
     
    File name is the file you want to download
