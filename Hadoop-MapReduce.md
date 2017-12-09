@@ -5,34 +5,34 @@
 
 * 6.1 Download the Data File from Internet
 	```
-        #cd ~                   
-        //command to go back to the home directory
+	#cd ~                   
+	//command to go back to the home directory
 	```
 	```
-        #mkdir test             
-        //command to create new directory name test
+	#mkdir test             
+	//command to create new directory name test
 	```
 	```
-        #cd test                
-        //command to open the test directory
+	#cd test                
+	//command to open the test directory
 	```
 	```
-        #wget http://content.udacity-data.com/courses/ud617/purchases.txt.gz    
-        //command to download the file from Internet
+	#wget http://content.udacity-data.com/courses/ud617/purchases.txt.gz    
+	//command to download the file from Internet
  	```
 	
 * 6.2 Extract the Data File
 
 	```
-        #gzip –d purchases.txt.gz
-        //command to extract the file
+	#gzip –d purchases.txt.gz
+	//command to extract the file
  	```
 	
 * 6.3 Test the Data File
         
 	```
-        #head -10 purchases.txt
-        //command to display the first 10 lines in file
+	#head -10 purchases.txt
+	//command to display the first 10 lines in file
 	```
 	
 ## 7. Edit the Mapper Function and Reducer Function
@@ -42,13 +42,13 @@
 	```
 	#vi mapper.py
 	//command to open the mapper file
-	```
-	copy the code in the mapper file from github to local machine
+	```	
  	```
 	type i to insert the command
 	add the command at the bottom of the core-site.xml file
 	type command : wq save the file and quit the vim file.
 	```
+	copy the code in the mapper file from github to local machine
 	
 * 7.2 Edit Reducer Function
 
@@ -56,13 +56,13 @@
 	#vi mapper.py
 	//command to open the mapper file
 	```
-	copy the code in the mapper file from github to local machine
 	```
 	type i to insert the command
 	add the command at the bottom of the core-site.xml file
 	type command : wq save the file and quit the vim file.
 	```
-
+	copy the code in the reducer file from github to local machine
+	
 * 7.3 Give the permission to running the python file
 	
 	```
@@ -84,11 +84,12 @@
 
 ## 8. Running MapReduce in Hadoop
 
-Before doing any steps list below, make sure you are in the master container.
-Also you need to make sure you already open three teriminals, one for master, one for slave1 and one for slave2
-	
-In master container type
+* 8.0 Check the location
 
+	Before doing any steps list below, make sure you are in the master container.
+	Also you need to make sure you already open three teriminals, one for master, one for slave1 and one for slave2
+	
+	In master container type
 	```
 	#cd ~
 	//command go back home directory
@@ -110,7 +111,6 @@ In master container type
 	//command copy the file to 
   	```
 * 8.2 Upload the mapper and reducer to Hadoop
-	
 	```
 	#cd ~/test
 	//command open the test directory
@@ -120,7 +120,6 @@ In master container type
 	//command to do MapReduce in hadoop
 	```
 * 8.3 Check the result
-
 	```
 	#hadoop fs -ls
 	//command to display directory in Hadoop system
@@ -135,9 +134,6 @@ In master container type
 	```
   
 ## 9. Restart the Docker
-
-	When you finish running task, you will close the terminal.
-	Next time, if you want to do another job, you need to restart the docker
 	
 * 9.1 Check container status
 	Open the teriminal
