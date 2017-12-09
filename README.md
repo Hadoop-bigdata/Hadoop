@@ -1,6 +1,6 @@
 # Hadoop Tutorial
 
-#### This report help people who has intesest to learn big data project and want to build Hadoop Distribute File System in Mac or Windonws.
+#### This reports help people who has intesest to learn big data project and want to build Hadoop Distribute File System in Mac or Windonws.
 
 
 In the report, we use Docker to set up the Hadoop Environment. After the installation, we build our database system based on the data file from Kaggle, Kaggle is the best website for data scientists. Then, we use MAPPER function and REDUCER function to extract the data in our database and download the file from our database. 
