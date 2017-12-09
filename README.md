@@ -12,7 +12,7 @@ Apache Hadoop is a software framework written in Java to process the big data vi
 Hadoop Distribute File System (HDFS) is the default filesystem in Hadoop, it was designed as a distributed filesystem that provides high-throughput access to application data. In HDFS, the big data file will be split into fixed size small files and each file will be duplicate into multiple datanode, and the namenode keeps track of file location. Due to big data file will be duplicated many times, it is good to adopt the human fault tolerance.
 
 
-The project include: 
+#### The project include: 
 
 First part: Installation
 
