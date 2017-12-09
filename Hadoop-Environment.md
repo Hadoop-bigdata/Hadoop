@@ -152,8 +152,14 @@ Before doing any steps list belowed, make sure we are in the master container in
 	#source ~/.bashrc
 	//command to restart the environment
 	```
-
-* 5.3 Creat Hadoop Image
+* 5.3 Install mrjob
+	
+	```
+	#pip install mrjob
+	//command download mrjob to local machine
+	```
+	
+* 5.4 Creat Hadoop Image
 	```
 	#exit
 	//command to get out of bash 
@@ -163,7 +169,7 @@ Before doing any steps list belowed, make sure we are in the master container in
 	//command to create docker image based on hadoop master
 	```
 	
-* 5.4 Set up Environment
+* 5.5 Set up Environment
 	```
 	$cd hadoop-cluster-docker
 	//command to open hadoop-cluster-docker directory 
@@ -175,7 +181,7 @@ Before doing any steps list belowed, make sure we are in the master container in
 	copy the file attach in start-container.sh file
 
 	
-* 5.5 Check the Environment
+* 5.6 Check the Environment
 	
 	```
 	$conda list 
