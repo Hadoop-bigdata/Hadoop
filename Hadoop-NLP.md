@@ -1,5 +1,5 @@
 # 
-* 1. Review Amazon Review file  
+1. Review Amazon Review file  
         
         Website: 
         http://jmcauley.ucsd.edu/data/amazon/
@@ -13,7 +13,7 @@
         http://snap.stanford.edu/data/amazon/productGraph/categoryFiles/reviews_Kindle_Store_5.json.gz
     
 
-* 2. Download Amazon Review file 
+2. Download Amazon Review file 
     
         Make sure you are in Hadoop-Master bash
         ```
