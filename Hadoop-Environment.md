@@ -113,16 +113,15 @@ Before doing any steps list belowed, make sure we are in the master container in
 	
 	It will login to the Hadoop page
 	
-5. Install Anaconda
+5. Install Packages
 
 	Make sure you are in Hadoop-Master bash, if you are not in Hadoop-master bash, do the step 3.3.
 	
+* 5.1 Download Anacoda
+
 	Anaconda is a freemium open source distribution of the Python and R programming languages for large-scale data processing, predictive analytics, and scientific computing, that aims to simplify package management and deployment.
 	
 	Reference: https://en.wikipedia.org/wiki/Anaconda_(Python_distribution)
-	
-* 5.1 Download Anacoda
-	
    	```
    	#mkdir python
    	//command to create new directory for python
@@ -157,6 +156,8 @@ Before doing any steps list belowed, make sure we are in the master container in
 	//command to restart the environment
 	```
 * 5.3 Install mrjob
+	
+	mrjob is package to write MapReduce jobs in Python and run them on several platforms
 	
 	```
 	#pip install mrjob
