@@ -83,23 +83,24 @@
 	```
 
 ## 8. Running MapReduce in Hadoop
+
 Before doing any steps list below, make sure you are in the master container.
-	Also you need to make sure you already open three teriminals, one for master, one for slave1 and one for slave2
+Also you need to make sure you already open three teriminals, one for master, one for slave1 and one for slave2
 	
 In master container type
 
- 	```
+	```
 	#cd ~
 	//command go back home directory
- 	```
-  	```
+	```
+	```
 	#cd test
 	//command open the test directory
 	```
   
 * 8.1 Upload the test file to Hadoop
 	
-	'hadoop fs -' is the basic command for Hadoop system
+	`hadoop fs -` is the basic command for Hadoop system
 	```
 	#hadoop fs -mkdir test
 	//command create test directory in hadoop system 
