@@ -15,10 +15,11 @@ Hadoop Distribute File System (HDFS) is the default filesystem in Hadoop, it was
 #### The project include: 
 
 #### First part: Installation
-
+```
 1. Install Docker
 	
 2. Install Hadoop Image in Docker
+```
 
 #### Second part: Setting up Environment
 
