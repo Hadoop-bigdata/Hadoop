@@ -14,13 +14,13 @@ Hadoop Distribute File System (HDFS) is the default filesystem in Hadoop, it was
 
 #### The project include: 
 
-First part: Installation
+#### First part: Installation
 
 1. Install Docker
 	
 2. Install Hadoop Image in Docker
 
-Second part: Setting up Environment
+#### Second part: Setting up Environment
 
 3. HDFS management
 
@@ -28,7 +28,7 @@ Second part: Setting up Environment
 
 5. Edit the Mapper Function and Reducer Function
 
-Third part: Test Hadoop Distribute File System 
+#### Third part: Test Hadoop Distribute File System 
 
 6. Build Hadoop network
 
@@ -36,7 +36,7 @@ Third part: Test Hadoop Distribute File System
 	
 8. Restart the Docker
 
-Fourth part: Nature Language Processing on Amazon Review
+#### Fourth part: Nature Language Processing on Amazon Review
 
 9. Download the Amazon Review
 
