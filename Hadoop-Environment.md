@@ -61,11 +61,11 @@ Before doing any steps list belowed, make sure we are in the master container in
 	//command to start running Hadoop
 	```
 	After restart Hadoop, you can connect browser which belongs to HDFS.
+	
 	Open the Browser http://localhost:50070/
+	
 	It will login to the Hadoop page
 	
-
-
 4. Install Anaconda
 
 * 4.1 Download Anacoda
