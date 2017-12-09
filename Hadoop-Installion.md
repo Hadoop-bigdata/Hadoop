@@ -39,7 +39,7 @@
 	
 	Reference: https://github.com/kiwenlau/hadoop-cluster-docker
 	
-	In project, we will use his image to do MapReduce funtion. 
+	In project, we will use his Hadoop image to do Project. 
 	
 	
 * 2.2 Create clone storage
