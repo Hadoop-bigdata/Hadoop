@@ -36,6 +36,7 @@
 	//command to pull Hadoop image into Docker
 	```
 	Thanks to kiwenlau who already build the Hadoop image in docker.
+	Referencn: https://github.com/kiwenlau/hadoop-cluster-docker
 	
 	In project, we will use his image to do MapReduce funtion. 
 	
