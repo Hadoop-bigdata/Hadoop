@@ -22,23 +22,25 @@ Hadoop Distribute File System (HDFS) is the default filesystem in Hadoop, it was
 ```
 
 #### Second part: Setting up Environment
-
+```
 3. HDFS management
 
 4. Download Test Data
 
 5. Edit the Mapper Function and Reducer Function
-
+```
 #### Third part: Test Hadoop Distribute File System 
-
+```
 6. Build Hadoop network
 
 7. Running Mapper Reducer in Hadoop
 	
 8. Restart the Docker
+```
 
 #### Fourth part: Nature Language Processing on Amazon Review
-
+```
 9. Download the Amazon Review
+```
 
 
