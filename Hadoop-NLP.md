@@ -1,5 +1,5 @@
 # 
-1. Review Amazon Review file  
+1. Review Amazon Review Website  
         
    Website: 
    http://jmcauley.ucsd.edu/data/amazon/
