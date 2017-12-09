@@ -117,6 +117,10 @@ Before doing any steps list belowed, make sure we are in the master container in
 
 	Make sure you are in Hadoop-Master bash, if you are not in Hadoop-master bash, do the step 3.3.
 	
+	Anaconda is a freemium open source distribution of the Python and R programming languages for large-scale data processing, predictive analytics, and scientific computing, that aims to simplify package management and deployment.
+	
+	Reference: https://en.wikipedia.org/wiki/Anaconda_(Python_distribution)
+	
 * 5.1 Download Anacoda
 	
    	```
