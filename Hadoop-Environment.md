@@ -88,7 +88,6 @@ Before doing any steps list belowed, make sure we are in the master container in
 	#vi core-site.xml
 	//command to open the xml file
 	```
-	
 	type `i` to insert the command
 	```
 	//command to insert the code in vim
@@ -146,10 +145,24 @@ Before doing any steps list belowed, make sure we are in the master container in
 	Do you wish the installer to prepend the Anaconda3 install location to PATH in your /root/.bashrc ? [yes|no]
 	```
 	choose `yes` 
+	
 	Then finish the installation
+	
+	```
+	#source ~/.bashrc
+	//command to restart the environment
+	```
 
-* 5.3 Set up Environment
-
+* 5.3 Creat Hadoop Image
+	
+	```
+	#exit
+	//command to get out of bash 
+	```
+	```
+	$docker commit hadoop-master hadoop:python
+	//command to create docker image based on hadoop master
+	```
 
 
 
