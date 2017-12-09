@@ -2,7 +2,7 @@
 
 Before doing any steps list belowed, make sure we are in the master container in Docker.
 
-3. Build Hadoop network
+## 3. Build Hadoop network
 
 	From kiwenlau's image, he already built one master contianer and two slave contianers in Hadoop environment. 
 	Before running the MapReduce function, we need to open two slave containers
@@ -53,7 +53,7 @@ Before doing any steps list belowed, make sure we are in the master container in
 	//command to connect bash system for the slave2
 	```
 
-4. HDFS management
+## 4. HDFS management
 
 	Hadoop Filesystem has its own web for user to manage their file. In order to take the benefit of web management.
 
@@ -113,7 +113,7 @@ Before doing any steps list belowed, make sure we are in the master container in
 	
 	It will login to the Hadoop page
 	
-5. Install Packages
+## 5. Install Packages
 
 	Make sure you are in Hadoop-Master bash, if you are not in Hadoop-master bash, do the step 3.3.
 	
