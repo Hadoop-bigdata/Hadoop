@@ -1,5 +1,7 @@
 ===================================
-Anaconda End User License Agreement
+
+# Anaconda End User License Agreement
+
 ===================================
 
 Copyright 2015, Anaconda, Inc.
