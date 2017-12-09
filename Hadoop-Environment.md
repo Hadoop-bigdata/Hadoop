@@ -2,6 +2,48 @@
 
 Before doing any steps list belowed, make sure we are in the master container in Docker.
 
+4. Build Hadoop network
+
+	From kiwenlau's image, he already built one master contianer and two slave contianers in Hadoop environment. 
+	Before running the MapReduce function, we need to open two slave containers
+	
+* 4.1 Open extract temriminals or command line
+
+	For Mac:
+	
+	First, click on terminal, then click the shell on the top bar
+	Then click new window, it will open one more terminal for your computer 
+	Repeat the step open one more terminal
+	
+* 4.2 Check container status
+	
+	```
+	$docker ps –a
+	//command to list all container in your docker
+	```
+	How to know the which container is master or slave, check the port columns, it will give the information
+	
+	check the status for each contianer
+	
+	if the status said: ' Exited (137) xx minutes(hours) ago' means the container is stop, you need to restart the container
+	
+	```
+	$docker start 0f3ae72bcf3b
+	//command to start the contianer
+	```
+	0f3ae72bcf3b is the name for the container, you can check it by command $docker ps –a
+	 
+* 4.3 Attach slave contianer
+	
+	```
+	$docker exec -ti hadoop-slave1 bash
+	//command to connect bash system for the slave1
+	```
+	```
+	$docker exec -ti hadoop-slave2 bash
+	//command to connect bash system for the slave2
+	```
+
 3. HDFS management
 
 	Hadoop Filesystem has its own web for user to manage their file. In order to take the benefit of web management.
@@ -172,45 +214,5 @@ Before doing any steps list belowed, make sure we are in the master container in
 	#head -50 purchases.txt | ./mapper.py | sort | ./reducer.py
 	//command to show the first 50 element in file and use mapper and reducer to get the result
 	```
-6. Build Hadoop network
 
-	From kiwenlau's image, he already built one master contianer and two slave contianers in Hadoop environment. 
-	Before running the MapReduce function, we need to open two slave containers
-	
-* 6.1 Open extract temriminals or command line
-
-	For Mac:
-	
-	First, click on terminal, then click the shell on the top bar
-	Then click new window, it will open one more terminal for your computer 
-	Repeat the step open one more terminal
-	
-* 6.2 Check container status
-	
-	```
-	$docker ps –a
-	//command to list all container in your docker
-	```
-	How to know the which container is master or slave, check the port columns, it will give the information
-	
-	check the status for each contianer
-	
-	if the status said: ' Exited (137) xx minutes(hours) ago' means the container is stop, you need to restart the container
-	
-	```
-	$docker start 0f3ae72bcf3b
-	//command to start the contianer
-	```
-	0f3ae72bcf3b is the name for the container, you can check it by command $docker ps –a
-	 
-* 6.3 Attach slave contianer
-	
-	```
-	$docker exec -ti hadoop-slave1 bash
-	//command to connect bash system for the slave1
-	```
-	```
-	$docker exec -ti hadoop-slave2 bash
-	//command to connect bash system for the slave2
-	```
 
