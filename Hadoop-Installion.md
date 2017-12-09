@@ -4,6 +4,7 @@
 
 * 1.1 Download Docker 
 	
+	Before Download the Docker make sure your computer will support vitrual machine.
 	
   	For Mac: https://www.docker.com/docker-mac
 	
