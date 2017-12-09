@@ -1,7 +1,8 @@
-# 
+# Nature Language Processing on Amazon Review
    
-   
-1. Review Amazon Review Website  
+## 9 Download File  
+
+* 1. Review Amazon Review Website  
         
    Website: 
    http://jmcauley.ucsd.edu/data/amazon/
@@ -16,7 +17,7 @@
    http://snap.stanford.edu/data/amazon/productGraph/categoryFiles/reviews_Kindle_Store_5.json.gz
     
 
-2. Download Amazon Review file 
+* 2. Download Amazon Review file 
     
    Make sure you are in Hadoop-Master bash
    
@@ -31,4 +32,4 @@
    wget http://snap.stanford.edu/data/amazon/productGraph/categoryFiles/reviews_Musical_Instruments_5.json.gz
    //command to download the file
    ```
-kao
+haha
