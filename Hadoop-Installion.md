@@ -1,4 +1,4 @@
-# Hadoop-Installion 
+# Hadoop-Installaon 
 
 1. Install Docker
 
