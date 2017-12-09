@@ -4,7 +4,6 @@
 6. Download Test Data
 
 * 6.1 Download the Data File from Internet
-	
 	```
         #cd ~                   
         //command to go back to the home directory
