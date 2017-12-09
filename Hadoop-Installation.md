@@ -1,6 +1,6 @@
 # Hadoop-Installation
 
-# 1. Install Docker
+## 1. Install Docker
 
 * 1.1 Download Docker 
 	
@@ -26,7 +26,7 @@
 	The more Memory and CPUs you give to Docker, the faster running speed you have. 
 	
 	
-# 2. Install Hadoop Image in Docker
+## 2. Install Hadoop Image in Docker
 
 	After install Docker on the local machine, you need to open the terminal (for mac) or command line (for Windows)
 
