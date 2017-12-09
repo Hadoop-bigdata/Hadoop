@@ -1,9 +1,9 @@
 	
 # MapReduce
 
-4. Download Test Data
+6. Download Test Data
 
-* 4.1 Download the Data File from Internet
+* 6.1 Download the Data File from Internet
 	
 	```
         #cd ~                   
@@ -22,23 +22,23 @@
         //command to download the file from Internet
  	```
 	
-* 4.2 Extract the Data File
+* 6.2 Extract the Data File
 
 	```
         #gzip –d purchases.txt.gz
         //command to extract the file
  	```
 	
-* 4.3 Test the Data File
+* 6.3 Test the Data File
         
 	```
         #head -10 purchases.txt
         //command to display the first 10 lines in file
 	```
 	
-5. Edit the Mapper Function and Reducer Function
+7. Edit the Mapper Function and Reducer Function
 
-* 5.1 Edit Mapper Function
+* 7.1 Edit Mapper Function
 	
 	```
 	#vi mapper.py
@@ -51,7 +51,7 @@
 	type command : wq save the file and quit the vim file.
 	```
 	
-* 5.2 Edit Reducer Function
+* 7.2 Edit Reducer Function
 
 	```
 	#vi mapper.py
@@ -64,7 +64,7 @@
 	type command : wq save the file and quit the vim file.
 	```
 
-* 5.3 Give the permission to running the python file
+* 7.3 Give the permission to running the python file
 	
 	```
 	#chmod u+x mapper.py reducer.py
@@ -76,17 +76,14 @@
 	```
 	If the file has permission, it should be in green color
 	
-* 5.4 Test the code in Master ContainerLinux
+* 7.4 Test the code in Master ContainerLinux
 
 	```
 	#head -50 purchases.txt | ./mapper.py | sort | ./reducer.py
 	//command to show the first 50 element in file and use mapper and reducer to get the result
 	```
 
-
-
-
-7. Running MapReduce in Hadoop
+8. Running MapReduce in Hadoop
 
 	Before doing any steps list below, make sure you are in the master container.
 	Also you need to make sure you already open three teriminals, one for master, one for slave1 and one for slave2
@@ -101,7 +98,7 @@
 	//command open the test directory
 	```
   
-* 7.1 Upload the test file to Hadoop
+* 8.1 Upload the test file to Hadoop
 	
 	'hadoop fs -' is the basic command for Hadoop system
 	```
@@ -112,7 +109,7 @@
 	#hadoop fs -cp purchases.txt test/purchases
 	//command copy the file to 
   	```
-* 7.2 Upload the mapper and reducer to Hadoop
+* 8.2 Upload the mapper and reducer to Hadoop
 	
 	```
 	#cd ~/test
@@ -122,7 +119,7 @@
 	#hadoop jar /usr/local/hadoop/share/hadoop/tools/lib/hadoop-streaming-2.7.2.jar -mapper mapper.py -reducer reducer.py -file mapper.py -file reducer.py -input input/purchases.txt -output outputtest
 	//command to do MapReduce in hadoop
 	```
-* 7.3 Check the result
+* 8.3 Check the result
 
 	```
 	#hadoop fs -ls
@@ -137,12 +134,12 @@
 	//command to check result for MapReduce
 	```
   
-8. Restart the Docker
+9. Restart the Docker
 
 	When you finish running task, you will close the terminal.
 	Next time, if you want to do another job, you need to restart the docker
 	
-* 8.1 Check container status
+* 9.1 Check container status
 	Open the teriminal
 	```
 	$docker ps –a
@@ -156,7 +153,7 @@
   	```
 	0f3ae72bcf3b is the name for the container, you can check it by command $docker ps –a
 	
-* 8.2 Reattach contianer
+* 9.2 Reattach contianer
 	```
 	$docker exec -ti hadoop-master bash
 	//command to connect bash system for the master
@@ -170,7 +167,7 @@
 	//command to connect bash system for the slave2
 	```
   
-* 8.3 Restart Hadoop in master container
+* 9.3 Restart Hadoop in master container
 
 	Then use the master container to restart Hadoop
 	```
@@ -178,5 +175,5 @@
 	//Command to restart the Hadoop
   	```
 	
-* 8.4 Repeat the Step 6, 7 
+* 9.4 Repeat the Step 6, 7 
 	
