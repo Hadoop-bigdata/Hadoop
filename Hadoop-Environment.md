@@ -83,6 +83,14 @@ Make sure you are in Hadoop-Master bash
    	//command to download Anaconda package
    	```
 
+
+
+
+
+
+
+
+
 4. Download Test Data
 
 * 4.1 Download the Data File from Internet
