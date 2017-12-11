@@ -119,7 +119,7 @@ Before doing any steps list belowed, make sure we are in the master container in
 
 	Make sure you are attach to the Hadoop-Master, if you are not sure whether you are in it, please close all your terminal and open a new terminal again, and then print:
 	```
-   	#docker attach hadoop-master
+	#docker attach hadoop-master
 	//link to the hadoop master
    	```
 	
