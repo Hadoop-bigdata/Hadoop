@@ -115,7 +115,10 @@ Before doing any steps list belowed, make sure we are in the master container in
 	
 ## 5. Install Packages
 
-	Make sure you are in Hadoop-Master bash, if you are not in Hadoop-master bash, do the step 3.3.
+	Make sure you are attach to the Hadoop-Master, if you are not sure whether you are in it, please close all your terminal and open a new terminal again, and then print:
+	```
+   	#docker attach hadoop-master
+   	```
 	
 * 5.1 Download Anacoda
 
@@ -155,12 +158,12 @@ Before doing any steps list belowed, make sure we are in the master container in
 	#source ~/.bashrc
 	//command to restart the environment
 	```
-* 5.3 Install mrjob
+* 5.3 Install twython
 	
-	mrjob is package to write MapReduce jobs in Python and run them on several platforms
+	twython is an necessary package to do the NLP job for MapReduce, we should make sure all machines have install it.
 	
 	```
-	#pip install mrjob
+	#conda install  -c conda-forge twython
 	//command download mrjob to local machine
 	```
 	
