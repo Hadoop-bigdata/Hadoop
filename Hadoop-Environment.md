@@ -113,7 +113,9 @@ Before doing any steps list belowed, make sure we are in the master container in
 	
 	It will login to the Hadoop page
 	
-* 5. Install Packages
+## 5. Install Packages
+
+* 5.1 confirm attach to the master
 
 	Make sure you are attach to the Hadoop-Master, if you are not sure whether you are in it, please close all your terminal and open a new terminal again, and then print:
 	```
