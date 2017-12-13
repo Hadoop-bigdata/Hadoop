@@ -142,6 +142,7 @@
 	```
 	
 * 4.4 Word-count in Hadoop
+
 	Thanks to likuie, he already give us a test code for testing the hadoop environment
 	```
 	./run-wordcount.sh
