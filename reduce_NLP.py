@@ -18,6 +18,7 @@ n = 10000
 for line in sys.stdin:
     rate_data = eval(line)
     rate = rate_data.pop("rate")
+    viewid = rate_data.pop("account")
     value = rate_data.values()
 
 
