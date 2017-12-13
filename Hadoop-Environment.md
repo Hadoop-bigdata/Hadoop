@@ -175,6 +175,7 @@ Before doing any steps list belowed, make sure we are in the master container in
 	```
 	
 	5.2.3 Install Panda
+	
 	Pandas is a software library written for the Python programming language for data manipulation and analysis.
 	
 	Reference https://en.wikipedia.org/wiki/Pandas_(software)
@@ -184,6 +185,7 @@ Before doing any steps list belowed, make sure we are in the master container in
 	```
 	
 	5.2.4 Install Sklearn
+	
 	Scikit-learn is a free software machine learning library for the Python programming language.
 	
 	Reference https://en.wikipedia.org/wiki/Scikit-learn
@@ -193,6 +195,7 @@ Before doing any steps list belowed, make sure we are in the master container in
 	```
 	
 	5.2.5 Install Scipy
+	
 	SciPy is an open source Python library used for scientific computing and technical computing.
 	
 	Reference https://en.wikipedia.org/wiki/SciPy
