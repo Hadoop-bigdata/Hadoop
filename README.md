@@ -36,11 +36,11 @@ https://github.com/Hadoop-bigdata/Hadoop/blob/master/Hadoop-Environment.md
 https://github.com/Hadoop-bigdata/Hadoop/blob/master/Hadoop-MapReduce.md
 
 ```
-7. Download the Test Dataset
+5. Download the Test Dataset
 
-8. Edit Map and Reduce Function
+6. Edit Map and Reduce Function
 
-9. Runing the Mapreduce in Hadoop
+7. Runing the Mapreduce in Hadoop
 ```
 
 #### Fourth part: Nature Language Processing on Amazon Review
@@ -48,11 +48,13 @@ https://github.com/Hadoop-bigdata/Hadoop/blob/master/Hadoop-MapReduce.md
 https://github.com/Hadoop-bigdata/Hadoop/blob/master/Hadoop-NLP.md
 
 ```
-10. Download the Amazon Review Dataset
+8. Download the Amazon Review Dataset
 
-11. Edit Map and Reduce Function
+9. Edit Map and Reduce Function
 
-12. Runing the Mapreduce in Hadoop
+10. Runing the Mapreduce in Hadoop
 ```
 
+### Appendix: Operation Command in Docker
 
+https://github.com/Hadoop-bigdata/Hadoop/blob/master/Docker-Operation.md
