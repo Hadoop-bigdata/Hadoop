@@ -10,6 +10,9 @@ from sklearn import metrics
 rates = []
 trains = []
 
+# set how many line you want to set as test data
+n = 10000
+
 # get each line data
 # transfer data to list
 for line in sys.stdin:
@@ -26,8 +29,7 @@ for line in sys.stdin:
 x = np.array(trains)
 y = np.array(rates)
 
-# set how many line you want to set as test data
-n = 10000
+# set traning test data base on n
 train_x = x[:-n,:]
 test_x = x[-n:,:]
 
