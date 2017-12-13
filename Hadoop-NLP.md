@@ -33,6 +33,7 @@
    wget http://snap.stanford.edu/data/amazon/productGraph/categoryFiles/reviews_Movies_and_TV_5.json.gz
    //command to download the file
    ```
+   
 * 10.3 Extract the file
 
 	```
@@ -110,7 +111,7 @@
 * 12.2 Upload the map and reduce to Hadoop
 	```
 	#cd ~/nlp
-	//command open the nlp directory
+	//command to open the nlp directory
 	```
 	```
 	#hadoop jar /usr/local/hadoop/share/hadoop/tools/lib/hadoop-streaming-2.7.2.jar -mapper map_nlp.py -reducer reduce_nlp.py -file map_nlp.py -file reduce_nlp.py -input input/reviews_Movies_and_TV_5.json -output outputtest1
