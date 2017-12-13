@@ -75,7 +75,7 @@
 	```
 	If the file has permission, it should be in green color
 	
-* 7.4 Test the code in Master ContainerLinux
+* 7.4 Test the code in Master Container Linux
 
 	```
 	#head -50 purchases.txt | ./mapper.py | sort | ./reducer.py
