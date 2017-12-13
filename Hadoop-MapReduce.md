@@ -88,7 +88,12 @@
 
 	Before doing any steps list below, make sure you are in the master container.
 	Also you need to make sure you already open three teriminals, one for master, one for slave1 and one for slave2
-	
+	```
+	#cd ~
+	//command to go back home directory
+	#./start-hadoop.sh
+	//command start hadoop
+	```
 	In master container type
 	```
 	#cd ~
@@ -98,6 +103,7 @@
 	#cd test
 	//command open the test directory
 	```
+
   
 * 9.1 Upload the test file to Hadoop
 	
