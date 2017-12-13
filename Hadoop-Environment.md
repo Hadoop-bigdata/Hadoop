@@ -261,3 +261,12 @@ Hadoop Filesystem has its own web for user to manage their file. In order to tak
 	//command to create docker image based on hadoop master
 	```
 	
+* 6.4 Restart Hadoop container
+	```
+	$cd hadoop-cluster-docker
+	//command to find the hadoop file
+	$ vi start-container.sh
+	//change the file content
+	```
+	copy the file start-container.sh
+	
