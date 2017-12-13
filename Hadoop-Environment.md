@@ -2,13 +2,10 @@
 
 Before doing any steps list belowed, make sure we are in the master container in Docker.
 
-
-	
-
 	
 ## 6. Install Packages
 
-* 6.0 confirm attach to the master
+* 6.0 Confirm attach to the master
 
 	Make sure you are attach to the Hadoop-Master, if you are not sure whether you are in it, please close all your terminal and open a new terminal again, and then print:
 	```
