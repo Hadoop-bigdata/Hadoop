@@ -48,7 +48,7 @@
 	add the command at the bottom of the core-site.xml file
 	type command : wq save the file and quit the vim file.
 	```
-	copy the code in the mapper file from github to local machine
+	copy the code in the map.py
 	
 * 8.2 Edit Reduce Function
 
@@ -61,7 +61,7 @@
 	add the command at the bottom of the core-site.xml file
 	type command : wq save the file and quit the vim file.
 	```
-	copy the code in the reducer file from github to local machine
+	copy the code in the reduce.py
 	
 * 8.3 Give the permission to running the python file
 	
@@ -78,7 +78,7 @@
 * 8.4 Test the code in Master Container Linux
 
 	```
-	#head -50 purchases.txt | ./map.py | sort | ./reduce.py
+	#head n -50 purchases.txt | ./map.py | sort | ./reduce.py
 	//command to show the first 50 element in file and use mapper and reducer to get the result
 	```
 
@@ -103,17 +103,12 @@
 	#cd test
 	//command open the test directory
 	```
-
   
 * 9.1 Upload the test file to Hadoop
 	
 	`hadoop fs -` is the basic command for Hadoop system
-	```
-	#hadoop fs -mkdir test
-	//command create test directory in hadoop system 
-	```
   	```
-	#hadoop fs -put purchases.txt test/purchases
+	#hadoop fs -put purchases.txt input/purchases
 	//command put the file to hadoop
   	```
 * 9.2 Upload the map and reduce to Hadoop
