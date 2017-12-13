@@ -30,10 +30,10 @@ Before running the MapReduce function, we need to open two slave containers
 	' Exited (137) xx minutes(hours) ago' means the container is stop, you need to restart the container
 	
 	```
-	$docker start 0f3ae72bcf3b
+	$docker start hadoop-master
 	//command to start the contianer
 	```
-	0f3ae72bcf3b is the address for the container, you can check it by command 
+	hadoop-master is the name for the container, you can check it by command 
 	
 	```
 	$docker ps –a
@@ -269,9 +269,4 @@ Hadoop Filesystem has its own web for user to manage their file. In order to tak
 	//change the file content
 	```
 	copy the file start-container.sh
-	```
-	$./start-container.sh
-	//command to restart the container
-	```
-	enter the passowrd for your local machine
 	
