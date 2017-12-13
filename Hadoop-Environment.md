@@ -123,11 +123,8 @@ Before doing any steps list belowed, make sure we are in the master container in
 	//link to the hadoop master
    	```
 	
-* 5.1 Download Anacoda
-
-	Anaconda is a freemium open source distribution of the Python and R programming languages for large-scale data processing, predictive analytics, and scientific computing, that aims to simplify package management and deployment.
+* 5.1 Download Python3
 	
-	Reference: https://en.wikipedia.org/wiki/Anaconda_(Python_distribution)
    	```
    	#mkdir python
    	//command to create new directory for python
@@ -135,32 +132,78 @@ Before doing any steps list belowed, make sure we are in the master container in
    	//command to change directory
    	```
    	```
-   	#wget https://repo.continuum.io/archive/Anaconda3-5.0.1-Linux-x86_64.sh
-   	//command to download Anaconda package
+   	#apt install  python3-pip
+   	//command to download Python package
    	```
-* 5.2 Install Anaconda
 	
-	```
-	#bash Anaconda3-5.0.1-Linux-x86_64.sh
-	//command to install Anaconda
-	```
 	Press `Enter` key in keyboard until command line continue display
 	```
-	Do you accept the license terms? [yes|no]
+	Do you want to continue? [Y/n] y
 	```
-	choose `yes` 
-	Then, press `Enter` key in keyboard until command line continue display
-	```
-	Do you wish the installer to prepend the Anaconda3 install location to PATH in your /root/.bashrc ? [yes|no]
-	```
-	choose `yes` 
+	choose `yes`
 	
-	Then finish the installation
+	After installing python, check python environment
+	```
+	#python3
+	//command to check the python running on your computer
+	exit()
+	//command to exit python
+	```
 	
+* 5.2 Install pip, Numpy, Pandas, Sklearn, Scipy, Vadar
+	
+	5.2.1 Install pip
+	
+	pip is a package management system used to install and manage software packages written in Python. 
+	reference https://en.wikipedia.org/wiki/Pip_(package_manager)
 	```
-	#source ~/.bashrc
-	//command to restart the environment
+	#wget https://bootstrap.pypa.io/get-pip.py
+	//command to download get pip.py 
+	# python get-pip.py
+	//command to get-pip file
 	```
+	
+	5.2.2 Install Numpy
+	
+	NumPy is a library for the Python programming language, adding support for large, multi-dimensional arrays and matrices, along with a large collection of high-level mathematical functions to operate on these arrays
+	reference https://en.wikipedia.org/wiki/NumPy
+	```
+	#pip install numpy
+	//command to install numpy
+	```
+	
+	5.2.3 Install Panda
+	Pandas is a software library written for the Python programming language for data manipulation and analysis.
+	reference https://en.wikipedia.org/wiki/Pandas_(software)
+	```
+	#pip install panda
+	//command to install panda
+	```
+	
+	5.2.4 Install Sklearn
+	Scikit-learn is a free software machine learning library for the Python programming language.
+	reference https://en.wikipedia.org/wiki/Scikit-learn
+	```
+	#pip install Sklearn
+	//command to install sklearn
+	```
+	
+	5.2.5 Install Scipy
+	SciPy is an open source Python library used for scientific computing and technical computing.
+	reference https://en.wikipedia.org/wiki/SciPy
+	```
+	#pip install Scipy
+	//command to install scipy
+	```
+	
+	5.2.6 Install vader.sentiment
+	VADER (Valence Aware Dictionary and sEntiment Reasoner) is a lexicon and rule-based sentiment analysis tool that is specifically attuned to sentiments expressed in social media. 
+	reference https://github.com/cjhutto/vaderSentiment
+	```
+	#pip install vaderSentiment
+	//command to install vaderSentiment
+	```
+	
 * 5.3 Install twython
 	
 	twython is an necessary package to do the NLP job for MapReduce, we should make sure all machines have install it.
