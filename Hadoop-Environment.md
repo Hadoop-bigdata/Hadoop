@@ -1,8 +1,8 @@
-# Hadoop Enviroment
+# Enviroment
 
 Before doing any steps list belowed, make sure we are in the master container in Docker.
 
-## 3. Build Hadoop network
+## 3. Hadoop Network
 
 	From kiwenlau's image, he already built one master contianer and two slave contianers in Hadoop environment. 
 	Before running the MapReduce function, we need to open two slave containers
@@ -40,7 +40,9 @@ Before doing any steps list belowed, make sure we are in the master container in
 	```
 	check the status
 	
-* 3.3 Attach Container
+## 4. Operation in Docker
+	
+* 4.1  Attach Container
 
 	```
 	$docker exec -ti hadoop-master bash
@@ -55,7 +57,7 @@ Before doing any steps list belowed, make sure we are in the master container in
 	//command to connect bash system for the slave2
 	```
 	
-* 3.4 Stop Container
+* 4.2 Stop Container
 	```
 	$docker stop hadoop-master
 	//command to stop for the master
@@ -69,7 +71,7 @@ Before doing any steps list belowed, make sure we are in the master container in
 	//command to stop for the slave2
 	```
 
-* 3.5 Start Container
+* 4.3 Start Container
 	```
 	$docker start hadoop-master
 	//command to start for the msater
@@ -82,40 +84,8 @@ Before doing any steps list belowed, make sure we are in the master container in
 	$docker start hadoop-slave2
 	//command to start for the slave2
 	```
-	
-## 4. Restart the Docker
-	
-* 4.1 Check container status
-
-	Open the teriminal
-	```
-	$docker ps –a
-	//command to list all container in your docker
-	```
-	Check the status for each contianer
-	If the status said: ' Exited (137) xx minutes(hours) ago' means the container is stop, you need to restart the container
-	```
-	$docker start 0f3ae72bcf3b
-	//command to start the contianer
-  	```
-	0f3ae72bcf3b is the name for the container, you can check it by command $docker ps –a
-	
-* 4.2 Reattach contianer
-
-	```
-	$docker exec -ti hadoop-master bash
-	//command to connect bash system for the master
-  	```
-  	```
-	$docker exec -ti hadoop-slave1 bash
-	//command to connect bash system for the slave1
-  	```
-  	```
-	$docker exec -ti hadoop-slave2 bash
-	//command to connect bash system for the slave2
-	```
   
-* 4.3 Restart Hadoop in master container
+* 4.4 Restart Hadoop in master container
 
 	Then use the master container to restart Hadoop
 	```
