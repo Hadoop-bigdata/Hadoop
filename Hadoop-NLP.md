@@ -84,7 +84,7 @@
 * 11.4 Test the code in Master Container Linux
 
 	```
-	#head -n50 reviews_Movies_and_TV_5.json | ./map_NLP.py | sort | ./reduce_NLP.py
+	#head -n 50 reviews_Movies_and_TV_5.json | ./map_NLP.py | sort | ./reduce_NLP.py
 	//command to show the first 50 element in file and use mapper and reducer to get the result
 	```
 	
