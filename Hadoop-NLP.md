@@ -109,11 +109,7 @@
 	
 	`hadoop fs -` is the basic command for Hadoop system
 	```
-	#hadoop fs -mkdir nlp
-	//command to create nlp directory in hadoop system 
-	```
-	```
-	#hadoop fs -put reviews_Movies_and_TV_5.json nlp/
+	#hadoop fs -put reviews_Movies_and_TV_5.json input/
 	//command to input the file to hadoop 
   	```
 	
