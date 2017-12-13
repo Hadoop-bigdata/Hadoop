@@ -66,11 +66,7 @@ After install Docker on the local machine, you need to open the terminal (for ma
  	//command to connect the master container with slave container
 	```
 
-* 2.4 Update the image
 
-	```
-	$docker run -ti --name hadoop kiwenlau/hadoop:1.0
-	//
 
 
 ```
