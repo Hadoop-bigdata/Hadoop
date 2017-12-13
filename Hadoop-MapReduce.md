@@ -88,7 +88,7 @@
 * 5.4 Test the code in Master Container Linux
 
 	```
-	#head n -50 purchases.txt | ./map.py | sort | ./reduce.py
+	#head -10 purchases.txt | ./map.py | sort | ./reduce.py
 	//command to show the first 50 element in file and use mapper and reducer to get the result
 	```
 
