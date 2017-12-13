@@ -272,6 +272,7 @@ Hadoop Filesystem has its own web for user to manage their file. In order to tak
 	```
 	
 	6.2.6 Install vader.sentiment
+	
 	VADER (Valence Aware Dictionary and sEntiment Reasoner) is a lexicon and rule-based sentiment analysis tool that is specifically attuned to sentiments expressed in social media. 
 	
 	Reference https://github.com/cjhutto/vaderSentiment
