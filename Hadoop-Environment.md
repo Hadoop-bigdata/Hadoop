@@ -155,7 +155,8 @@ Before doing any steps list belowed, make sure we are in the master container in
 	5.2.1 Install pip
 	
 	pip is a package management system used to install and manage software packages written in Python. 
-	reference https://en.wikipedia.org/wiki/Pip_(package_manager)
+	
+	Reference https://en.wikipedia.org/wiki/Pip_(package_manager)
 	```
 	#wget https://bootstrap.pypa.io/get-pip.py
 	//command to download get pip.py 
@@ -166,7 +167,8 @@ Before doing any steps list belowed, make sure we are in the master container in
 	5.2.2 Install Numpy
 	
 	NumPy is a library for the Python programming language, adding support for large, multi-dimensional arrays and matrices, along with a large collection of high-level mathematical functions to operate on these arrays
-	reference https://en.wikipedia.org/wiki/NumPy
+	
+	Reference https://en.wikipedia.org/wiki/NumPy
 	```
 	#pip install numpy
 	//command to install numpy
@@ -174,7 +176,8 @@ Before doing any steps list belowed, make sure we are in the master container in
 	
 	5.2.3 Install Panda
 	Pandas is a software library written for the Python programming language for data manipulation and analysis.
-	reference https://en.wikipedia.org/wiki/Pandas_(software)
+	
+	Reference https://en.wikipedia.org/wiki/Pandas_(software)
 	```
 	#pip install panda
 	//command to install panda
@@ -182,7 +185,8 @@ Before doing any steps list belowed, make sure we are in the master container in
 	
 	5.2.4 Install Sklearn
 	Scikit-learn is a free software machine learning library for the Python programming language.
-	reference https://en.wikipedia.org/wiki/Scikit-learn
+	
+	Reference https://en.wikipedia.org/wiki/Scikit-learn
 	```
 	#pip install Sklearn
 	//command to install sklearn
@@ -190,7 +194,8 @@ Before doing any steps list belowed, make sure we are in the master container in
 	
 	5.2.5 Install Scipy
 	SciPy is an open source Python library used for scientific computing and technical computing.
-	reference https://en.wikipedia.org/wiki/SciPy
+	
+	Reference https://en.wikipedia.org/wiki/SciPy
 	```
 	#pip install Scipy
 	//command to install scipy
@@ -198,22 +203,14 @@ Before doing any steps list belowed, make sure we are in the master container in
 	
 	5.2.6 Install vader.sentiment
 	VADER (Valence Aware Dictionary and sEntiment Reasoner) is a lexicon and rule-based sentiment analysis tool that is specifically attuned to sentiments expressed in social media. 
-	reference https://github.com/cjhutto/vaderSentiment
+	
+	Reference https://github.com/cjhutto/vaderSentiment
 	```
 	#pip install vaderSentiment
 	//command to install vaderSentiment
 	```
 	
-* 5.3 Install twython
-	
-	twython is an necessary package to do the NLP job for MapReduce, we should make sure all machines have install it.
-	
-	```
-	#conda install  -c conda-forge twython
-	//command download mrjob to local machine
-	```
-	
-* 5.4 Creat Hadoop Image
+* 5.3 Creat Hadoop Image
 	```
 	#exit
 	//command to get out of bash 
@@ -223,7 +220,7 @@ Before doing any steps list belowed, make sure we are in the master container in
 	//command to create docker image based on hadoop master
 	```
 	
-* 5.5 Set up Environment
+* 5.4 Set up Environment
 	```
 	$cd hadoop-cluster-docker
 	//command to open hadoop-cluster-docker directory 
@@ -235,7 +232,7 @@ Before doing any steps list belowed, make sure we are in the master container in
 	copy the file attach in start-container.sh file
 
 	
-* 5.6 Check the Environment
+* 5.5 Check the Environment
 	
 	```
 	$conda list 
