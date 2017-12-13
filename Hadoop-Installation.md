@@ -65,28 +65,3 @@ After install Docker on the local machine, you need to open the terminal (for ma
 	$docker network create --driver=bridge Hadoop
  	//command to connect the master container with slave container
 	```
-
-
-
-
-```
-* 2.4 Running the Master Container
-
-	```
-	$cd hadoop-cluster-docker
-	//command 
-	```
-	```
-	$./start-container.sh
-	//command to start the container
- 	```
-	When you type the command, you are in the Linux system, which located in Docker container xxxx
-	Also xxx is in the master container
-	
-* 2.5 Run the Hadoop in Docker
-	
-	```
-	#./start-hadoop.sh
-	//command to run the Hadoop in the container
- 	```
-```
