@@ -1,17 +1,9 @@
-## 3. Hadoop Network
+# Appendix
 
-From kiwenlau's image, he already built one master contianer and two slave contianers in Hadoop environment. 
-Before running the MapReduce function, we need to open two slave containers
-	
-* 3.1 Open extra Terminals or Command Line
+## Operation in Docker
 
-	For Mac:
 	
-	First, click on terminal, then click the shell on the top bar
-	Then click new window, it will open one more terminal for your computer 
-	Repeat the step open one more terminal
-	
-* 3.2 Check Container Status
+* 1 Check Container Status
 	
 	```
 	$docker ps –a
@@ -37,9 +29,7 @@ Before running the MapReduce function, we need to open two slave containers
 	check the status
 
 
-## 4. Operation in Docker
-	
-* 4.1  Attach Container
+* 2 Attach Container
 
 	```
 	$docker exec -ti hadoop-master bash
@@ -54,7 +44,7 @@ Before running the MapReduce function, we need to open two slave containers
 	//command to connect bash system for the slave2
 	```
 	
-* 4.2 Stop Container
+* 3 Stop Container
 	```
 	$docker stop hadoop-master
 	//command to stop for the master
@@ -68,7 +58,7 @@ Before running the MapReduce function, we need to open two slave containers
 	//command to stop for the slave2
 	```
 
-* 4.3 Start Container
+* 4 Start Container
 	```
 	$docker start hadoop-master
 	//command to start for the msater
@@ -82,10 +72,3 @@ Before running the MapReduce function, we need to open two slave containers
 	//command to start for the slave2
 	```
   
-* 4.4 Restart Hadoop in master container
-
-	Then use the master container to restart Hadoop
-	```
-	#./start-hadoop.sh
-	//Command to restart the Hadoop
-  	```
