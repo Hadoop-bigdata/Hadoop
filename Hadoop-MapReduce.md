@@ -133,43 +133,5 @@
 	//command to check result for MapReduce
 	```
   
-## 9. Restart the Docker
-	
-* 9.1 Check container status
-	Open the teriminal
-	```
-	$docker ps –a
-	//command to list all container in your docker
-	```
-	check the status for each contianer
-	if the status said: ' Exited (137) xx minutes(hours) ago' means the container is stop, you need to restart the container
-	```
-	$docker start 0f3ae72bcf3b
-	//command to start the contianer
-  	```
-	0f3ae72bcf3b is the name for the container, you can check it by command $docker ps –a
-	
-* 9.2 Reattach contianer
-	```
-	$docker exec -ti hadoop-master bash
-	//command to connect bash system for the master
-  	```
-  	```
-	$docker exec -ti hadoop-slave1 bash
-	//command to connect bash system for the slave1
-  	```
-  	```
-	$docker exec -ti hadoop-slave2 bash
-	//command to connect bash system for the slave2
-	```
-  
-* 9.3 Restart Hadoop in master container
 
-	Then use the master container to restart Hadoop
-	```
-	#./start-hadoop.sh
-	//Command to restart the Hadoop
-  	```
-	
-* 9.4 Repeat the Step 6, 7 
 	
