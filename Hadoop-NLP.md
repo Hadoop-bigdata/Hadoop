@@ -1,6 +1,6 @@
 # Nature Language Processing on Amazon Review
    
-## 9 NLP on Hadoop 
+## 9. NLP on Hadoop 
 
 * 9.1 Review Amazon Review Website  
         
