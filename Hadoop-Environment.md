@@ -212,14 +212,14 @@ Hadoop Filesystem has its own web for user to manage their file. In order to tak
 	//command to install numpy
 	```
 	
-	6.2.3 Install Panda
+	6.2.3 Install Pandas
 	
 	Pandas is a software library written for the Python programming language for data manipulation and analysis.
 	
 	Reference https://en.wikipedia.org/wiki/Pandas_(software)
 	```
 	#pip install panda
-	//command to install panda
+	//command to install pandas
 	```
 	
 	6.2.4 Install Sklearn
