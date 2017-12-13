@@ -123,7 +123,36 @@
 	$cd hadoop
 	//command to find the hadoop file which we download from github
 	$ vi start-container.sh
-	//change the file content
+	//command to check code
 	```
-	copy the file start-container.sh
+	If the start-container.sh is empty, copy the file named start-container.sh in the github
+	```
+	$chmod u+x start-container.sh
+	//command to give the permission to run 
+	$./start-container.sh
+	//run the image and create the container
+	```
 	
+* 4.3 Run the container
+	After type command `./start-container.sh`, you already in the linux system
+	```
+	#start-hadoop.sh
+	//command to run the hadoop
+	```
+	check the word-count in hadoop. The likuie already give us a test code for testing the hadoop environment
+	```
+	./run-wordcount.sh
+	```
+	The result is 
+	```
+	input file1.txt:
+	Hello Hadoop
+
+	input file2.txt:
+	Hello Docker
+
+	wordcount output:
+	Docker	1
+	Hadoop	1
+	Hello	2
+	```
