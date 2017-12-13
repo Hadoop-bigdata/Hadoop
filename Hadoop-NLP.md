@@ -32,7 +32,7 @@
    wget http://snap.stanford.edu/data/amazon/productGraph/categoryFiles/reviews_Musical_Instruments_5.json.gz
    //command to download the file
 
-* 9.3 Download the package
+* 9.3 Edit MapReduce function in Hadoop 
 
    9.3.1 Install Python3
    ```
