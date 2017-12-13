@@ -22,23 +22,8 @@
 	$docker start hadoop-master
 	//command to start the contianer
 	```
-
-* 2 Attach Container
-
-	```
-	$docker exec -ti hadoop-master bash
-	//command to connect bash system for the master
-	```
-	```
-	$docker exec -ti hadoop-slave1 bash
-	//command to connect bash system for the slave1
-	```
-	```
-	$docker exec -ti hadoop-slave2 bash
-	//command to connect bash system for the slave2
-	```
 	
-* 3 Stop Container
+* 2 Stop Container
 	```
 	$docker stop hadoop-master
 	//command to stop for the master
@@ -52,7 +37,7 @@
 	//command to stop for the slave2
 	```
 
-* 4 Start Container
+* 3 Start Container
 	```
 	$docker start hadoop-master
 	//command to start for the msater
@@ -64,5 +49,20 @@
 	```
 	$docker start hadoop-slave2
 	//command to start for the slave2
+	```
+	
+* 4 Connect Container
+
+	```
+	$docker exec -ti hadoop-master bash
+	//command to connect bash system for the master
+	```
+	```
+	$docker exec -ti hadoop-slave1 bash
+	//command to connect bash system for the slave1
+	```
+	```
+	$docker exec -ti hadoop-slave2 bash
+	//command to connect bash system for the slave2
 	```
   
