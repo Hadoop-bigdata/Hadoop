@@ -21,7 +21,7 @@
 * 4.2 Extract the Data File
 
 	```
-	#gzip –d purchases.txt.gz
+	#gzip -d purchases.txt.gz
 	//command to extract the file
  	```
 	
