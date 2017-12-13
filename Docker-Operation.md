@@ -4,7 +4,8 @@
 
 	
 * 1 Check Container Status
-	
+
+	hadoop-master is the name for the container, you can check it by command 
 	```
 	$docker ps –a
 	//command to list all container in your docker
@@ -21,13 +22,6 @@
 	$docker start hadoop-master
 	//command to start the contianer
 	```
-	hadoop-master is the name for the container, you can check it by command 
-	
-	```
-	$docker ps –a
-	```
-	check the status
-
 
 * 2 Attach Container
 
