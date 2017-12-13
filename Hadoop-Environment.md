@@ -4,8 +4,8 @@ Before doing any steps list belowed, make sure we are in the master container in
 
 ## 3. Hadoop Network
 
-	From kiwenlau's image, he already built one master contianer and two slave contianers in Hadoop environment. 
-	Before running the MapReduce function, we need to open two slave containers
+From kiwenlau's image, he already built one master contianer and two slave contianers in Hadoop environment. 
+Before running the MapReduce function, we need to open two slave containers
 	
 * 3.1 Open extra Terminals or Command Line
 
