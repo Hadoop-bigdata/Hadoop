@@ -1,9 +1,9 @@
 	
 # MapReduce on Test Data set
 
-## 7. Download Test Data
+## 4. Download Test Data
 
-* 7.1 Download the Data File from Internet
+* 4.1 Download the Data File from Internet
 	```
 	#cd ~                   
 	//command to go back to the home directory
