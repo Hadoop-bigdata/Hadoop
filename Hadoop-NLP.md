@@ -33,5 +33,10 @@
    //command to download the file
 
 * 9.3 Download the package
-   
+
+   9.3.1 Install Python3
+   ```
+   # apt install  python3-pip
+   //command to installl python3
+   ```
    
