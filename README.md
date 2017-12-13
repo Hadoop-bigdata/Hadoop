@@ -11,6 +11,9 @@ Hadoop Distribute File System (HDFS) is the default filesystem in Hadoop, it was
 #### The project include: 
 
 #### First part: Installation
+
+https://github.com/Hadoop-bigdata/Hadoop/blob/master/Hadoop-Installation.md
+
 ```
 1. Install Docker
 	
@@ -18,25 +21,41 @@ Hadoop Distribute File System (HDFS) is the default filesystem in Hadoop, it was
 ```
 
 #### Second part: Setting up Environment
-```
-3. HDFS management
 
-4. Download Test Data
+https://github.com/Hadoop-bigdata/Hadoop/blob/master/Hadoop-Environment.md
 
-5. Edit the Mapper Function and Reducer Function
 ```
-#### Third part: Test Hadoop Distribute File System 
-```
-6. Build Hadoop network
+3. Build Hadoop Network
 
-7. Running Mapper Reducer in Hadoop
-	
-8. Restart the Docker
+4. Restart the Docker
+
+5. HDFS management
+
+6. Install Packages
+```
+
+#### Third part: Test MapReduce in Hadoop 
+
+https://github.com/Hadoop-bigdata/Hadoop/blob/master/Hadoop-MapReduce.md
+
+```
+7. Download the Test Dataset
+
+8. Edit Map and Reduce Function
+
+9. Runing the Mapreduce in Hadoop
 ```
 
 #### Fourth part: Nature Language Processing on Amazon Review
+
+https://github.com/Hadoop-bigdata/Hadoop/blob/master/Hadoop-NLP.md
+
 ```
-9. Download the Amazon Review
+10. Download the Amazon Review Dataset
+
+11. Edit Map and Reduce Function
+
+12. Runing the Mapreduce in Hadoop
 ```
 
 
