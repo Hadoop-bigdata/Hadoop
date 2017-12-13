@@ -98,15 +98,9 @@ After change the test, we need to replace the n back to the default value.
 
 * 9.1 Check the location
 
-	Before doing any steps list below, make sure you are in the master container.
-	
-	Also you need to make sure you already open three teriminals, one for master, one for slave1 and one for slave2.
-	
 	```
-	#cd ~
-	//command to go back home directory
-	#./start-hadoop.sh
-	//command start hadoop
+	cd ~/NLP
+	//command to change the directory
 	```
 	
 * 9.2 Upload the test file to Hadoop
