@@ -269,4 +269,9 @@ Hadoop Filesystem has its own web for user to manage their file. In order to tak
 	//change the file content
 	```
 	copy the file start-container.sh
+	```
+	$./start-container.sh
+	//command to restart the container
+	```
+	enter the passowrd for your local machine
 	
