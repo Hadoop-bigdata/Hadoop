@@ -56,7 +56,7 @@ After install Docker on the local machine, you need to open the terminal (for ma
 	```
 	After try download the xcode, then tyep the same code:
 	```
-	$git clone https://github.com/kiwenlau/hadoop-cluster-docker
+	$git clone https://github.com/Hadoop-bigdata/Hadoop.git
  	```
 	
 * 2.3 Connect the Hadoop Network
