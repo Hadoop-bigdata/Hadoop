@@ -220,33 +220,8 @@ Before doing any steps list belowed, make sure we are in the master container in
 	//command to create docker image based on hadoop master
 	```
 	
-* 5.4 Set up Environment
-	```
-	$cd hadoop-cluster-docker
-	//command to open hadoop-cluster-docker directory 
-	```
-	```
-	$vi start-container.sh
-	//command to set up environment
-	```
-	copy the file attach in start-container.sh file
 
 	
-* 5.5 Check the Environment
-	
-	```
-	$conda list 
-	//check conda package
-	```
-	```
-	$jupyter notebook --no-browser --allow-root --ip=*
-	//start jupyter notebook on local machine based docker
-	```
-	After type the command above, the command will show a line to your local machine
-	```
-	to login with a token:
-	http://localhost:8888/?token=94d2a0a6140510faf292c7bb5eb56058cb6071e856e6e473
-	```
-	Open Broswer with link above, after that you could edit the code in local machine
+
 	
 	
