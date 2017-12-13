@@ -54,7 +54,7 @@
 	add the command at the bottom of the core-site.xml file
 	type command : wq save the file and quit the vim file.
 	```
-	copy the code in the reducer file from github to local machine
+	copy the code in the map_NLP.py
 	
 * 11.2 Edit Reduce Function
 
@@ -67,7 +67,7 @@
 	add the command at the bottom of the core-site.xml file
 	type command : wq save the file and quit the vim file.
 	```
-	copy the code in the reducer file from github to local machine
+	copy the code in the reduce_NLP.py
 	
 * 11.3 Give the permission to running the python file
 	
