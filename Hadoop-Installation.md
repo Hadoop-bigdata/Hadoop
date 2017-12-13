@@ -65,7 +65,11 @@ After install Docker on the local machine, you need to open the terminal (for ma
 	$docker network create --driver=bridge Hadoop
  	//command to connect the master container with slave container
 	```
-	
+
+
+
+
+```
 * 2.4 Running the Master Container
 
 	```
@@ -85,4 +89,4 @@ After install Docker on the local machine, you need to open the terminal (for ma
 	#./start-hadoop.sh
 	//command to run the Hadoop in the container
  	```
-
+```
