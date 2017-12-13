@@ -38,12 +38,13 @@ Before doing any steps list belowed, make sure we are in the master container in
 	```
 	$docker ps –a
 	```
+	check the status
 	
-* 3.3 Attach Contianer
+* 3.3 Attach Container
 
 	```
 	$docker exec -ti hadoop-master bash
-	//command to connect bash system for the slave1
+	//command to connect bash system for the master
 	```
 	```
 	$docker exec -ti hadoop-slave1 bash
@@ -52,8 +53,36 @@ Before doing any steps list belowed, make sure we are in the master container in
 	```
 	$docker exec -ti hadoop-slave2 bash
 	//command to connect bash system for the slave2
-
 	```
+	
+* 3.4 Stop Container
+	```
+	$docker stop hadoop-master
+	//command to stop for the master
+	```
+	```
+	$docker stop hadoop-slave1
+	//command to stop for the slave1
+	```
+	```
+	$docker stop hadoop-slave2
+	//command to stop for the slave2
+	```
+
+* 3.5 Start Container
+	```
+	$docker start hadoop-master
+	//command to start for the msater
+	```
+	```
+	$docker start hadoop-slave1
+	//command to start for the slave1
+	```
+	```
+	$docker start hadoop-slave2
+	//command to start for the slave2
+	```
+	
 ## 4. Restart the Docker
 	
 * 4.1 Check container status
