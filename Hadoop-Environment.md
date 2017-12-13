@@ -134,6 +134,7 @@
 	```
 	
 * 4.3 Run the container
+
 	After type command `./start-container.sh`, you already in the linux system
 	```
 	#start-hadoop.sh
