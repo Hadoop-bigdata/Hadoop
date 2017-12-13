@@ -113,10 +113,10 @@
 	//command create test directory in hadoop system 
 	```
   	```
-	#hadoop fs -cp purchases.txt test/purchases
-	//command copy the file to 
+	#hadoop fs -put purchases.txt test/purchases
+	//command put the file to hadoop
   	```
-* 9.2 Upload the mapr and reduce to Hadoop
+* 9.2 Upload the map and reduce to Hadoop
 	```
 	#cd ~/test
 	//command open the test directory
