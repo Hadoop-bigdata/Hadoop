@@ -54,7 +54,7 @@ After install Docker on the local machine, you need to open the terminal (for ma
 	$xcode-select –install
 	//command to download the xcode
 	```
-	After try download the xcode, then tyep the same code:
+	After try download the xcode, then type the same code:
 	```
 	$git clone https://github.com/Hadoop-bigdata/Hadoop.git
  	```
