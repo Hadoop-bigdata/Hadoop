@@ -1,8 +1,8 @@
 # Nature Language Processing on Amazon Review
    
-## 9. NLP on Hadoop 
+## 10. NLP on Hadoop 
 
-* 9.1 Review Amazon Review Website  
+* 10.1 Review Amazon Review Website  
 
    This dataset contains product reviews and metadata from Amazon, including 142.8 million reviews spanning May 1996 - July 2014.
    
@@ -18,7 +18,7 @@
    http://snap.stanford.edu/data/amazon/productGraph/categoryFiles/reviews_Kindle_Store_5.json.gz
     
 
-* 9.2 Download Amazon Review file 
+* 10.2 Download Amazon Review file 
     
    Make sure you are in Hadoop-Master bash
    
@@ -30,13 +30,19 @@
    ``` 
    For this project, we will use reviews_Movies_TV_5.json as our dataset.
    ```
-   wget http://snap.stanford.edu/data/amazon/productGraph/categoryFiles/reviews_Movies_and_TV_5.json
+   wget http://snap.stanford.edu/data/amazon/productGraph/categoryFiles/reviews_Movies_and_TV_5.json.gz
    //command to download the file
    ```
-	
-## 10. Edit the Map Function and Reduce Function
+* 10.3 Extract the file
 
-* 10.1 Edit Map Function
+	```
+	#gzip –d reviews_Movies_and_TV_5.json.gz
+	//command to extract the file
+	```
+	
+## 11. Edit the Map Function and Reduce Function
+
+* 11.1 Edit Map Function
 
 	```
 	#vi map_NLP.py
@@ -49,7 +55,7 @@
 	```
 	copy the code in the reducer file from github to local machine
 	
-* 10.2 Edit Reduce Function
+* 11.2 Edit Reduce Function
 
 	```
 	#vi reduce_NLP.py
@@ -62,7 +68,7 @@
 	```
 	copy the code in the reducer file from github to local machine
 	
-* 10.3 Give the permission to running the python file
+* 11.3 Give the permission to running the python file
 	
 	```
 	#chmod u+x map_NLP.py reduce_NLP.py
@@ -74,21 +80,22 @@
 	```
 	If the file has permission, it should be in green color
 	
-* 10.4 Test the code in Master Container Linux
+* 11.4 Test the code in Master Container Linux
 
 	```
-	#head -50 purchases.txt | ./map_NLP.py | sort | ./reduce_NLP.py
+	#head -50 reviews_Movies_and_TV_5.json | ./map_NLP.py | sort | ./reduce_NLP.py
 	//command to show the first 50 element in file and use mapper and reducer to get the result
 	```
-## 10. Running MapReduce_NLP in Hadoop
+	
+## 12. Running MapReduce_NLP in Hadoop
 
-* 10.0 Check the location
+* 12.0 Check the location
 
 	Before doing any steps list below, make sure you are in the master container.
 	
 	Also you need to make sure you already open three teriminals, one for master, one for slave1 and one for slave2
 	
-* 10.1 Upload the test file to Hadoop
+* 12.1 Upload the test file to Hadoop
 	
 	`hadoop fs -` is the basic command for Hadoop system
 	```
@@ -100,7 +107,7 @@
 	//command to copy the file to 
   	```
 	
-* 10.2 Upload the map and reduce to Hadoop
+* 12.2 Upload the map and reduce to Hadoop
 	```
 	#cd ~/nlp
 	//command open the nlp directory
@@ -109,7 +116,7 @@
 	#hadoop jar /usr/local/hadoop/share/hadoop/tools/lib/hadoop-streaming-2.7.2.jar -mapper map_nlp.py -reducer reduce_nlp.py -file map_nlp.py -file reduce_nlp.py -input input/reviews_Movies_and_TV_5.json -output outputtest1
 	//command to do MapReduce in hadoop
 	```
-* 10.3 Check the result
+* 12.3 Check the result
 	```
 	#hadoop fs -ls
 	//command to display directory in Hadoop system
