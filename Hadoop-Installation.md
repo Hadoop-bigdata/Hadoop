@@ -24,11 +24,11 @@
 	However, the Docker preferences depends on your computer.
 	The more Memory and CPUs you give to Docker, the faster running speed you have. 
 	
-## 2. Install Hadoop Image in Docker
+## 2. Pull Hadoop Image in Docker
 
 After install Docker on the local machine, you need to open the terminal (for mac) or command line (for Windows)
 	
-* 2.1 Install Hadoop Image
+* 2.1 Pull Hadoop Image
 	
 	```
 	$docker pull kiwenlau/hadoop:1.0
@@ -38,7 +38,7 @@ After install Docker on the local machine, you need to open the terminal (for ma
 	
 	Reference: https://github.com/kiwenlau/hadoop-cluster-docker
 	
-	In project, we will use his Hadoop image to do Project. 
+	In project, we will build our Hadoop Environment based on his Hadoop image. 
 	
 * 2.2 Create clone storage
 	
