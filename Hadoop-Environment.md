@@ -133,18 +133,20 @@
 	//run the image and create the container
 	```
 	
-* 4.3 Run the container
+* 4.3 Start Hadoop
 
 	After type command `./start-container.sh`, you already in the linux system
 	```
 	#start-hadoop.sh
 	//command to run the hadoop
 	```
-	check the word-count in hadoop. The likuie already give us a test code for testing the hadoop environment
+	
+* 4.4 Word-count in Hadoop
+	Thanks to likuie, he already give us a test code for testing the hadoop environment
 	```
 	./run-wordcount.sh
 	```
-	The result is 
+	The result is:
 	```
 	input file1.txt:
 	Hello Hadoop
