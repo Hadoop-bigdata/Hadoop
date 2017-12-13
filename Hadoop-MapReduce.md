@@ -35,13 +35,13 @@
 	//command to display the first 10 lines in file
 	```
 	
-## 7. Edit the Mapper Function and Reducer Function
+## 7. Edit the Map Function and Reduce Function
 
-* 7.1 Edit Mapper Function
+* 7.1 Edit Map Function
 	
 	```
-	#vi mapper.py
-	//command to open the mapper file
+	#vi map.py
+	//command to open the map file
 	```	
  	```
 	type i to insert the command
@@ -50,11 +50,11 @@
 	```
 	copy the code in the mapper file from github to local machine
 	
-* 7.2 Edit Reducer Function
+* 7.2 Edit Reduce Function
 
 	```
-	#vi mapper.py
-	//command to open the mapper file
+	#vi reduce.py
+	//command to open the reduce file
 	```
 	```
 	type i to insert the command
@@ -66,7 +66,7 @@
 * 7.3 Give the permission to running the python file
 	
 	```
-	#chmod u+x mapper.py reducer.py
+	#chmod u+x map.py reduce.py
 	//command to give the permission to running the file
 	```
 	```
@@ -78,7 +78,7 @@
 * 7.4 Test the code in Master Container Linux
 
 	```
-	#head -50 purchases.txt | ./mapper.py | sort | ./reducer.py
+	#head -50 purchases.txt | ./map.py | sort | ./reduce.py
 	//command to show the first 50 element in file and use mapper and reducer to get the result
 	```
 
