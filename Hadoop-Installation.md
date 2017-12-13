@@ -40,7 +40,7 @@ After install Docker on the local machine, you need to open the terminal (for ma
 	
 	In project, we will build our Hadoop Environment based on his Hadoop image. 
 	
-* 2.2 Create clone storage
+* 2.2 Create clone github file
 	
 	```
 	$git clone https://github.com/Hadoop-bigdata/Hadoop.git
