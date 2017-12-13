@@ -124,15 +124,13 @@
 	#hadoop fs -put purchases.txt input/purchases
 	//command put the file to hadoop
   	```
-* 6.3 Upload the map and reduce to Hadoop
-	```
-	#cd ~/test
-	//command open the test directory
-	```
+* 6.3 Run the map and reduce to Hadoop
+
 	```
 	#hadoop jar /usr/local/hadoop/share/hadoop/tools/lib/hadoop-streaming-2.7.2.jar -mapper map.py -reducer reduce.py -file map.py -file reduce.py -input input/purchases.txt -output outputtest
 	//command to do MapReduce in hadoop
 	```
+	
 * 6.4 Check the result
 	```
 	#hadoop fs -ls
