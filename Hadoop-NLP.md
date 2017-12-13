@@ -84,9 +84,10 @@
 * 11.4 Test the code in Master Container Linux
 
 	```
-	#head -n 50 reviews_Movies_and_TV_5.json | ./map_NLP.py | sort | ./reduce_NLP.py
+	#head -n 100 reviews_Movies_and_TV_5.json | ./map_NLP.py | sort | ./reduce_NLP.py
 	//command to show the first 50 element in file and use mapper and reducer to get the result
 	```
+	check the n in reduce_NLP.py, to run the test code, the `head -n number` should bigger than the n in the reduce_NLP.py 
 	
 ## 12. Running MapReduce_NLP in Hadoop
 
