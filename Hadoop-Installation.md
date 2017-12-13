@@ -85,10 +85,4 @@ After install Docker on the local machine, you need to open the terminal (for ma
 	#./start-hadoop.sh
 	//command to run the Hadoop in the container
  	```
-* 2.6 Stop the Hadoop in Docker
-	
-	```
-	#stop-all.sh
-	//command to stop the Hadoop in the container,
-	```
-	
+
