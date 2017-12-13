@@ -17,7 +17,7 @@ https://github.com/Hadoop-bigdata/Hadoop/blob/master/Hadoop-Installation.md
 ```
 1. Install Docker
 	
-2. Install Hadoop Image in Docker
+2. Pull Hadoop Image in Docker
 ```
 
 #### Second part: Setting up Environment
@@ -25,13 +25,10 @@ https://github.com/Hadoop-bigdata/Hadoop/blob/master/Hadoop-Installation.md
 https://github.com/Hadoop-bigdata/Hadoop/blob/master/Hadoop-Environment.md
 
 ```
-3. Build Hadoop Network
+3. Update Image
 
-4. Restart the Docker
+4. Create new Hadoop Image
 
-5. HDFS management
-
-6. Install Packages
 ```
 
 #### Third part: Test MapReduce in Hadoop 
