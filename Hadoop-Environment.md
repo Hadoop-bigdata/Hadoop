@@ -50,7 +50,7 @@
 	```
 	#wget https://bootstrap.pypa.io/get-pip.py
 	//command to download get pip.py 
-	# python get-pip.py
+	#python get-pip.py
 	//command to get-pip file
 	```
 	
@@ -103,8 +103,10 @@
 	#pip install vaderSentiment
 	//command to install vaderSentiment
 	```
-	
-* 3.3 Creat new Hadoop Image
+
+## 4. Create new Hadoop Image
+
+* 4.1 Creat new Hadoop Image
 
 	```
 	#exit
@@ -115,7 +117,7 @@
 	//command to create docker image based on hadoop he used
 	```
 	
-* 3.4 Restart Hadoop container
+* 4.2 Restart Hadoop container
 
 	```
 	$cd hadoop-cluster-docker
