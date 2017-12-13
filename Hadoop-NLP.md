@@ -37,7 +37,7 @@
 * 10.3 Extract the file
 
 	```
-	#gzip –d reviews_Movies_and_TV_5.json.gz
+	#gzip -d reviews_Movies_and_TV_5.json.gz 
 	//command to extract the file
 	```
 	
