@@ -113,8 +113,8 @@
 	//command to create nlp directory in hadoop system 
 	```
 	```
-	#hadoop fs -cp reviews_Movies_and_TV_5.json nlp/reviews_Movies_and_TV_5.json
-	//command to copy the file to 
+	#hadoop fs -put reviews_Movies_and_TV_5.json nlp/
+	//command to input the file to hadoop 
   	```
 	
 * 12.2 Upload the map and reduce to Hadoop
