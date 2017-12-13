@@ -120,8 +120,8 @@
 * 4.2 Restart Hadoop container
 
 	```
-	$cd hadoop-cluster-docker
-	//command to find the hadoop file
+	$cd hadoop
+	//command to find the hadoop file which we download from github
 	$ vi start-container.sh
 	//change the file content
 	```
