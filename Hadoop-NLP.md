@@ -91,7 +91,10 @@
 	
 	In order to run the test code, the command head -n `number` the number should be bigger than the n value in the reduce_NLP.py 
 	
+	
 ## 9. Running MapReduce_NLP in Hadoop
+
+After change the test, we need to replace the n back to the default value.
 
 * 9.1 Check the location
 
