@@ -130,7 +130,7 @@
 	$chmod u+x start-container.sh
 	//command to give the permission to run 
 	$./start-container.sh
-	//run the image and create the container
+	//command to run the image and create the container
 	```
 	
 * 4.3 Start Hadoop
@@ -138,14 +138,15 @@
 	After type command `./start-container.sh`, you already in the linux system
 	```
 	#start-hadoop.sh
-	//command to run the hadoop
+	//command to run hadoop
 	```
 	
 * 4.4 Word-count in Hadoop
 
 	Thanks to likuie, he already give us a test code for testing the hadoop environment
 	```
-	./run-wordcount.sh
+	#./run-wordcount.sh
+	//command to run wordcount
 	```
 	The result is:
 	```
