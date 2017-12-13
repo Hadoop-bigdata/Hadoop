@@ -40,6 +40,7 @@ Before doing any steps list belowed, make sure we are in the master container in
 	```
 	
 * 3.3 Attach Contianer
+
 	```
 	$docker exec -ti hadoop-master bash
 	//command to connect bash system for the slave1
@@ -51,35 +52,72 @@ Before doing any steps list belowed, make sure we are in the master container in
 	```
 	$docker exec -ti hadoop-slave2 bash
 	//command to connect bash system for the slave2
+
 	```
+## 4. Restart the Docker
+	
+* 4.1 Check container status
 
-## 4. HDFS management
+	Open the teriminal
+	```
+	$docker ps –a
+	//command to list all container in your docker
+	```
+	Check the status for each contianer
+	If the status said: ' Exited (137) xx minutes(hours) ago' means the container is stop, you need to restart the container
+	```
+	$docker start 0f3ae72bcf3b
+	//command to start the contianer
+  	```
+	0f3ae72bcf3b is the name for the container, you can check it by command $docker ps –a
+	
+* 4.2 Reattach contianer
 
+	```
+	$docker exec -ti hadoop-master bash
+	//command to connect bash system for the master
+  	```
+  	```
+	$docker exec -ti hadoop-slave1 bash
+	//command to connect bash system for the slave1
+  	```
+  	```
+	$docker exec -ti hadoop-slave2 bash
+	//command to connect bash system for the slave2
+	```
+  
+* 4.3 Restart Hadoop in master container
+
+	Then use the master container to restart Hadoop
+	```
+	#./start-hadoop.sh
+	//Command to restart the Hadoop
+  	```
+	
+## 5. HDFS management
+	
 	Hadoop Filesystem has its own web for user to manage their file. In order to take the benefit of web management.
 
-* 4.1 Update apt-get
+* 5.1 Update apt-get
 
 	Due to the Hadoop image is out of date, we need to do some update before setting up the environment.
-	
 	```
 	#apt-get update
  	//command to update the apt-get
 	```
 	
-* 4.2 Install vim
+* 5.2 Install vim
 
 	Vim is the editor for Linux System. 
 	In the project, we need vim to edit the codes.
-	
 	```
 	#apt-get install vim
-	//command install vim
+	//command to install vim
  	```
 	
-* 4.3 Set up Web HDFS management environment
+* 5.3 Set up Web HDFS management environment
 
 	vi is the command for Linux system to create new file to edit the code
-	
 	```
 	#cd /usr/local/hadoop/etc/hadoop/
  	//command to change directory
@@ -99,7 +137,7 @@ Before doing any steps list belowed, make sure we are in the master container in
 	```
 	copy the code from the core-site.xml in github 
 	
-* 4.4 Restart Hadoop
+* 5.4 Restart Hadoop
 
 	Before Restart the Hadoop, make sure you already close Hadoop, to close the Hadoop follow step in 2.6.
 	
@@ -113,17 +151,17 @@ Before doing any steps list belowed, make sure we are in the master container in
 	
 	It will login to the Hadoop page
 	
-## 5. Install Packages
+## 6. Install Packages
 
-* 5.0 confirm attach to the master
+* 6.0 confirm attach to the master
 
 	Make sure you are attach to the Hadoop-Master, if you are not sure whether you are in it, please close all your terminal and open a new terminal again, and then print:
 	```
 	#docker attach hadoop-master
-	//link to the hadoop master
+	//command to link to the hadoop master
    	```
 	
-* 5.1 Download Python3
+* 6.1 Download Python3
 	
    	```
    	#mkdir python
@@ -150,9 +188,9 @@ Before doing any steps list belowed, make sure we are in the master container in
 	//command to exit python
 	```
 	
-* 5.2 Install pip, Numpy, Pandas, Sklearn, Scipy, Vadar
+* 6.2 Install pip, Numpy, Pandas, Sklearn, Scipy, Vadar
 	
-	5.2.1 Install pip
+	6.2.1 Install pip
 	
 	pip is a package management system used to install and manage software packages written in Python. 
 	
@@ -164,7 +202,7 @@ Before doing any steps list belowed, make sure we are in the master container in
 	//command to get-pip file
 	```
 	
-	5.2.2 Install Numpy
+	6.2.2 Install Numpy
 	
 	NumPy is a library for the Python programming language, adding support for large, multi-dimensional arrays and matrices, along with a large collection of high-level mathematical functions to operate on these arrays
 	
@@ -174,7 +212,7 @@ Before doing any steps list belowed, make sure we are in the master container in
 	//command to install numpy
 	```
 	
-	5.2.3 Install Panda
+	6.2.3 Install Panda
 	
 	Pandas is a software library written for the Python programming language for data manipulation and analysis.
 	
@@ -184,7 +222,7 @@ Before doing any steps list belowed, make sure we are in the master container in
 	//command to install panda
 	```
 	
-	5.2.4 Install Sklearn
+	6.2.4 Install Sklearn
 	
 	Scikit-learn is a free software machine learning library for the Python programming language.
 	
@@ -194,7 +232,7 @@ Before doing any steps list belowed, make sure we are in the master container in
 	//command to install sklearn
 	```
 	
-	5.2.5 Install Scipy
+	6.2.5 Install Scipy
 	
 	SciPy is an open source Python library used for scientific computing and technical computing.
 	
@@ -204,7 +242,7 @@ Before doing any steps list belowed, make sure we are in the master container in
 	//command to install scipy
 	```
 	
-	5.2.6 Install vader.sentiment
+	6.2.6 Install vader.sentiment
 	VADER (Valence Aware Dictionary and sEntiment Reasoner) is a lexicon and rule-based sentiment analysis tool that is specifically attuned to sentiments expressed in social media. 
 	
 	Reference https://github.com/cjhutto/vaderSentiment
@@ -213,7 +251,7 @@ Before doing any steps list belowed, make sure we are in the master container in
 	//command to install vaderSentiment
 	```
 	
-* 5.3 Creat Hadoop Image
+* 6.3 Creat Hadoop Image
 	```
 	#exit
 	//command to get out of bash 
@@ -222,9 +260,4 @@ Before doing any steps list belowed, make sure we are in the master container in
 	$docker commit hadoop-master hadoop:python
 	//command to create docker image based on hadoop master
 	```
-	
-
-	
-
-	
 	
