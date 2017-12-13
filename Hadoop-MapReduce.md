@@ -127,7 +127,7 @@
 * 6.3 Run the map and reduce to Hadoop
 
 	```
-	#hadoop jar /usr/local/hadoop/share/hadoop/tools/lib/hadoop-streaming-2.7.2.jar -mapper map.py -reducer reduce.py -file map.py -file reduce.py -input input/purchases.txt -output outputtest
+	#hadoop jar /usr/local/hadoop/share/hadoop/tools/lib/hadoop-streaming-2.7.2.jar -mapper map.py -reducer reduce.py -file map.py -file reduce.py -input input/purchases -output outputtest
 	//command to do MapReduce in hadoop
 	```
 	
