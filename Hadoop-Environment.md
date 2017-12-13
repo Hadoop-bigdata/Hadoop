@@ -1,65 +1,47 @@
-# Enviroment
+# Set up Enviroment
 
-Before doing any steps list belowed, make sure we are in the master container in Docker.
+## 3. Update Image 
 
-	
-## 6. Install Packages
+* 3.1 Connect the Image
 
-* 6.0 Confirm attach to the master
-
-	Make sure you are attach to the Hadoop-Master, if you are not sure whether you are in it, please close all your terminal and open a new terminal again, and then print:
 	```
-	#docker attach hadoop-master
-	//command to link to the hadoop master
-   	```
+	$docker run -ti --name hadoop kiwenlau/hadoop:1.0
+	//
+	```
+	Due to the Hadoop image is out of date, we need to do some update to set up the environment.
 	
-* 5.1 Update apt-get
+* 3.2 Update Image
 
-	Due to the Hadoop image is out of date, we need to do some update before setting up the environment.
+	3.2.1 Install apt-get
+	
+	The Advanced Package Tool, or APT, is a free software user interface that works with core libraries to handle the installation and removal of software on Debian and other Linux distributions
+	Reference: https://en.wikipedia.org/wiki/APT_(Debian)
 	```
 	#apt-get update
  	//command to update the apt-get
 	```
 	
-* 5.2 Install vim
+	3.2.2 Install Vim
 
 	Vim is the editor for Linux System. 
-	In the project, we need vim to edit the codes.
 	```
 	#apt-get install vim
 	//command to install vim
  	```
+	Press `Y` in keyboard when command line display
+	```
+	Do you want to continue? [Y/n]
+	```
+
+	3.2.3 Install Python3
 	
-* 6.1 Download Python3
-	
+	Python is the programming language for our project.
    	```
-   	#mkdir python
-   	//command to create new directory for python
-   	#cd python
-   	//command to change directory
-   	```
-   	```
-   	#apt install  python3-pip
+   	#apt install  python3
    	//command to download Python package
    	```
 	
-	Press `Enter` key in keyboard until command line continue display
-	```
-	Do you want to continue? [Y/n] y
-	```
-	choose `yes`
-	
-	After installing python, check python environment
-	```
-	#python3
-	//command to check the python running on your computer
-	exit()
-	//command to exit python
-	```
-	
-* 6.2 Install pip, Numpy, Pandas, Sklearn, Scipy, Vadar
-	
-	6.2.1 Install pip
+	3.2.4 Install pip
 	
 	pip is a package management system used to install and manage software packages written in Python. 
 	
@@ -71,7 +53,7 @@ Before doing any steps list belowed, make sure we are in the master container in
 	//command to get-pip file
 	```
 	
-	6.2.2 Install Numpy
+	3.2.5 Install Numpy
 	
 	NumPy is a library for the Python programming language, adding support for large, multi-dimensional arrays and matrices, along with a large collection of high-level mathematical functions to operate on these arrays
 	
@@ -81,17 +63,17 @@ Before doing any steps list belowed, make sure we are in the master container in
 	//command to install numpy
 	```
 	
-	6.2.3 Install Pandas
+	3.2.6 Install Pandas
 	
 	Pandas is a software library written for the Python programming language for data manipulation and analysis.
 	
 	Reference https://en.wikipedia.org/wiki/Pandas_(software)
 	```
-	#pip install panda
+	#pip install pandas
 	//command to install pandas
 	```
 	
-	6.2.4 Install Sklearn
+	3.2.7 Install Sklearn
 	
 	Scikit-learn is a free software machine learning library for the Python programming language.
 	
@@ -101,7 +83,7 @@ Before doing any steps list belowed, make sure we are in the master container in
 	//command to install sklearn
 	```
 	
-	6.2.5 Install Scipy
+	3.2.8 Install Scipy
 	
 	SciPy is an open source Python library used for scientific computing and technical computing.
 	
@@ -111,7 +93,7 @@ Before doing any steps list belowed, make sure we are in the master container in
 	//command to install scipy
 	```
 	
-	6.2.6 Install vader.sentiment
+	3.2.9 Install vader.sentiment
 	
 	VADER (Valence Aware Dictionary and sEntiment Reasoner) is a lexicon and rule-based sentiment analysis tool that is specifically attuned to sentiments expressed in social media. 
 	
@@ -121,17 +103,19 @@ Before doing any steps list belowed, make sure we are in the master container in
 	//command to install vaderSentiment
 	```
 	
-* 6.3 Creat Hadoop Image
+* 3.3 Creat new Hadoop Image
+
 	```
 	#exit
 	//command to get out of bash 
 	```
 	```
-	$docker commit hadoop-master hadoop:python
-	//command to create docker image based on hadoop master
+	$docker commit hadoop hadoop:python
+	//command to create docker image based on hadoop he used
 	```
 	
-* 6.4 Restart Hadoop container
+* 3.4 Restart Hadoop container
+
 	```
 	$cd hadoop-cluster-docker
 	//command to find the hadoop file
