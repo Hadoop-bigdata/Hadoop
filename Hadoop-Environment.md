@@ -2,43 +2,7 @@
 
 Before doing any steps list belowed, make sure we are in the master container in Docker.
 
-## 3. Hadoop Network
 
-From kiwenlau's image, he already built one master contianer and two slave contianers in Hadoop environment. 
-Before running the MapReduce function, we need to open two slave containers
-	
-* 3.1 Open extra Terminals or Command Line
-
-	For Mac:
-	
-	First, click on terminal, then click the shell on the top bar
-	Then click new window, it will open one more terminal for your computer 
-	Repeat the step open one more terminal
-	
-* 3.2 Check Container Status
-	
-	```
-	$docker ps –a
-	//command to list all container in your docker
-	```
-	How to know the which container is master or slave, check the port columns, it will give the information
-	
-	Check the status for each contianer
-	
-	If the status said: 
-	
-	' Exited (137) xx minutes(hours) ago' means the container is stop, you need to restart the container
-	
-	```
-	$docker start hadoop-master
-	//command to start the contianer
-	```
-	hadoop-master is the name for the container, you can check it by command 
-	
-	```
-	$docker ps –a
-	```
-	check the status
 	
 
 	
