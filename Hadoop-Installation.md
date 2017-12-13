@@ -26,7 +26,7 @@
 	
 ## 2. Install Hadoop Image in Docker
 
-	After install Docker on the local machine, you need to open the terminal (for mac) or command line (for Windows)
+After install Docker on the local machine, you need to open the terminal (for mac) or command line (for Windows)
 	
 * 2.1 Install Hadoop Image
 	
