@@ -43,7 +43,7 @@ After install Docker on the local machine, you need to open the terminal (for ma
 * 2.2 Create clone storage
 	
 	```
-	$git clone https://github.com/kiwenlau/hadoop-cluster-docker
+	$git clone https://github.com/Hadoop-bigdata/Hadoop.git
 	```
 	For the Mac users, if you meet the error
 	```
