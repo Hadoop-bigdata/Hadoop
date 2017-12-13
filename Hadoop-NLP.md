@@ -117,7 +117,7 @@ After change the test, we need to replace the n back to the default value.
 	//command to open the nlp directory
 	```
 	```
-	#hadoop jar /usr/local/hadoop/share/hadoop/tools/lib/hadoop-streaming-2.7.2.jar -mapper map_nlp.py -reducer reduce_nlp.py -file map_nlp.py -file reduce_nlp.py -input input/reviews_Movies_and_TV_5.json -output outputtest1
+	#hadoop jar /usr/local/hadoop/share/hadoop/tools/lib/hadoop-streaming-2.7.2.jar -mapper map_NLP.py -reducer reduce_NLP.py -file map_NLP.py -file reduce_NLP.py -input input/reviews_Movies_and_TV_5.json -output outputtest1
 	//command to do MapReduce in hadoop
 	```
 * 9.4 Check the result
