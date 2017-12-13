@@ -91,7 +91,19 @@
 	#head -10 purchases.txt | ./map.py | sort | ./reduce.py
 	//command to show the first 50 element in file and use mapper and reducer to get the result
 	```
-
+	The result is 
+	```
+	Austin 	379.6
+	Corpus Christi 	25.38
+	Fort Worth 	367.45
+	New York 	296.8
+	Omaha 	235.63
+	Pittsburgh 	493.51
+	San Diego 	66.08
+	San Jose 	214.05
+	Stockton 	247.18
+	```
+	
 ## 6. Running MapReduce in Hadoop
 
 * 6.1 Check the location
