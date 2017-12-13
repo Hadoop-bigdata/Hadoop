@@ -59,7 +59,7 @@ After install Docker on the local machine, you need to open the terminal (for ma
 	$git clone https://github.com/kiwenlau/hadoop-cluster-docker
  	```
 	
-* 2.3 Connect the Internet
+* 2.3 Connect the Hadoop Network
 
 	```
 	$docker network create --driver=bridge Hadoop
