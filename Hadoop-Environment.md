@@ -96,7 +96,7 @@ Before doing any steps list belowed, make sure we are in the master container in
 	
 ## 5. HDFS management
 	
-	Hadoop Filesystem has its own web for user to manage their file. In order to take the benefit of web management.
+Hadoop Filesystem has its own web for user to manage their file. In order to take the benefit of web management.
 
 * 5.1 Update apt-get
 
