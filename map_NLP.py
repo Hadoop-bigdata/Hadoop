@@ -1,12 +1,11 @@
 #! /usr/bin/env python
 
-import pandas as pd
+#import package
 import sys
-import numpy
 from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
 
-
 def mapper():
+    
     analyzer = SentimentIntensityAnalyzer()
 
     for line in sys.stdin:
