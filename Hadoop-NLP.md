@@ -87,7 +87,8 @@
 	#head -n 100 reviews_Movies_and_TV_5.json | ./map_NLP.py | sort | ./reduce_NLP.py
 	//command to show the first 50 element in file and use mapper and reducer to get the result
 	```
-	check the `n value` in reduce_NLP.py.
+	Check the `n value` in reduce_NLP.py.
+	
 	In order to run the test code, the command head -n `number` the number should be bigger than the n value in the reduce_NLP.py 
 	
 ## 9. Running MapReduce_NLP in Hadoop
