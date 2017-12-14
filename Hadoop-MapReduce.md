@@ -1,9 +1,9 @@
 	
 # MapReduce on Test Data set
 
-## 4. Download Test Data
+## 5. Download Test Data
 
-* 4.1 Download the Test Data File from Internet
+* 5.1 Download the Test Data File from Internet
 
 	```
 	#cd ~                   
@@ -18,14 +18,14 @@
 	//command to download the file from Internet
  	```
 	
-* 4.2 Extract the Data File
+* 5.2 Extract the Data File
 
 	```
 	#gzip -d purchases.txt.gz
 	//command to extract the file
  	```
 	
-* 4.3 Check the Data File
+* 5.3 Check the Data File
         
 	```
 	#head -10 purchases.txt
@@ -45,9 +45,9 @@
 	2012-01-01	09:00	Fort Worth	Toys	213.88	Visa
 	```
 	
-## 5. Edit the Map Function and Reduce Function
+## 6. Edit the Map Function and Reduce Function
 
-* 5.1 Edit Map Function
+* 6.1 Edit Map Function
 	
 	```
 	#vi map.py
@@ -60,7 +60,7 @@
 	```
 	copy the code in the map.py
 	
-* 5.2 Edit Reduce Function
+* 6.2 Edit Reduce Function
 
 	```
 	#vi reduce.py
@@ -73,7 +73,7 @@
 	```
 	copy the code in the reduce.py
 	
-* 5.3 Give the permission to running the python file
+* 6.3 Give the permission to running the python file
 	
 	```
 	#chmod u+x map.py reduce.py
@@ -85,7 +85,7 @@
 	```
 	If the file has permission, it should be in green color
 	
-* 5.4 Test the code in Master Container Linux
+* 6.4 Test the code in Master Container Linux
 
 	```
 	#head -10 purchases.txt | ./map.py | sort | ./reduce.py
@@ -104,9 +104,9 @@
 	Stockton 	247.18
 	```
 	
-## 6. Running MapReduce in Hadoop
+## 7. Running MapReduce in Hadoop
 
-* 6.1 Check the location
+* 7.1 Check the location
 
 	```
 	#cd ~
@@ -117,21 +117,21 @@
 	//command open the test directory
 	```
   
-* 6.2 Upload the test file to Hadoop
+* 7.2 Upload the test file to Hadoop
 	
 	`hadoop fs -` is the basic command for Hadoop system
   	```
 	#hadoop fs -put purchases.txt input/purchases
 	//command put the file to hadoop
   	```
-* 6.3 Run the map and reduce to Hadoop
+* 7.3 Run the map and reduce to Hadoop
 
 	```
 	#hadoop jar /usr/local/hadoop/share/hadoop/tools/lib/hadoop-streaming-2.7.2.jar -mapper map.py -reducer reduce.py -file map.py -file reduce.py -input input/purchases -output outputtest
 	//command to do MapReduce in hadoop
 	```
 	
-* 6.4 Check the result
+* 7.4 Check the result
 	```
 	#hadoop fs -ls
 	//command to display directory in Hadoop system
