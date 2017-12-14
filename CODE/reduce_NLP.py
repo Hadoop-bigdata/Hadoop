@@ -49,4 +49,4 @@ y_pred = rf.predict(test_x)
 score = metrics.accuracy_score(test_y,y_pred)
 
 # save score as ouput
-print(score)
+print('The final accurary is' score)
