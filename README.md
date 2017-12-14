@@ -28,7 +28,6 @@ https://github.com/Hadoop-bigdata/Hadoop/blob/master/Hadoop-Environment.md
 3. Update Image
 
 4. Create new Hadoop Image
-
 ```
 
 #### Third part: Test MapReduce in Hadoop 
