@@ -16,8 +16,7 @@
    For example:
    Review Kindle store
    http://snap.stanford.edu/data/amazon/productGraph/categoryFiles/reviews_Kindle_Store_5.json.gz
-    
-
+   
 * 8.2 Download Amazon Review file 
     
    Make sure you are in Hadoop-Master bash
@@ -28,16 +27,16 @@
    cd NLP
    //command to change directory
    ``` 
-   For this project, we will use reviews_Movies_TV_5.json as our dataset.
+   For this project, we will use reviews_Kindle_Store_5.json as our dataset.
    ```
-   wget http://snap.stanford.edu/data/amazon/productGraph/categoryFiles/reviews_Movies_and_TV_5.json.gz
+   wget http://snap.stanford.edu/data/amazon/productGraph/categoryFiles/reviews_Kindle_Store_5.json.gz
    //command to download the file
    ```
    
 * 8.3 Extract the file
 
 	```
-	#gzip -d reviews_Movies_and_TV_5.json.gz 
+	#gzip -d reviews_Kindle_Store_5.json.gz 
 	//command to extract the file
 	```
 	
@@ -84,7 +83,7 @@
 * 9.4 Test the code in Master Container Linux
 
 	```
-	#head -n 100 reviews_Movies_and_TV_5.json | ./map_NLP.py | sort | ./reduce_NLP.py
+	#head -n 100 reviews_Kindle_Store_5.json | ./map_NLP.py | sort | ./reduce_NLP.py
 	//command to show the first 50 element in file and use mapper and reducer to get the result
 	```
 	Check the `n value` in reduce_NLP.py.
@@ -107,7 +106,7 @@ After doing the test, we need to replace the `n value` in the reduce_NLP.py back
 	
 	`hadoop fs -` is the basic command for Hadoop system
 	```
-	#hadoop fs -put reviews_Movies_and_TV_5.json input/
+	#hadoop fs -put reviews_Kindle_Store_5.json input/
 	//command to input the file to hadoop 
   	```
 	
@@ -117,7 +116,7 @@ After doing the test, we need to replace the `n value` in the reduce_NLP.py back
 	//command to open the nlp directory
 	```
 	```
-	#hadoop jar /usr/local/hadoop/share/hadoop/tools/lib/hadoop-streaming-2.7.2.jar -mapper map_NLP.py -reducer reduce_NLP.py -file map_NLP.py -file reduce_NLP.py -input input/reviews_Movies_and_TV_5.json -output outputtest1
+	#hadoop jar /usr/local/hadoop/share/hadoop/tools/lib/hadoop-streaming-2.7.2.jar -mapper map_NLP.py -reducer reduce_NLP.py -file map_NLP.py -file reduce_NLP.py -input input/reviews_Kindle_Store_5.json -output outputtest1
 	//command to do MapReduce in hadoop
 	```
 * 10.4 Check the result
