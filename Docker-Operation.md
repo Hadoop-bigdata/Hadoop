@@ -2,7 +2,7 @@
 
 ## Operation in Docker
 
-* 1. Close and reconnect the Dokcer
+* 1 Close and reconnect the Dokcer
 	
 	1.1 Close the Docker
 	
@@ -22,7 +22,7 @@
 	```
 	After connect to the master container, you can follow the instruction in MapReduce and NLP to do the following step list in the section.
 	
-* 2. Check Container Status
+* 2 Check Container Status
 
 	hadoop-master is the name for the container, you can check it by command 
 	```
@@ -42,7 +42,7 @@
 	//command to start the contianer
 	```
 	
-* 3. Stop Container
+* 3 Stop Container
 	```
 	$docker stop hadoop-master
 	//command to stop for the master
