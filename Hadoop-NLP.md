@@ -1,8 +1,8 @@
 # Nature Language Processing on Amazon Review
    
-## 7. Download Amazon Review 
+## 8. Download Amazon Review 
 
-* 7.1 Review Amazon Review Website  
+* 8.1 Review Amazon Review Website  
 
    This dataset contains product reviews and metadata from Amazon, including 142.8 million reviews spanning May 1996 - July 2014.
    
@@ -18,7 +18,7 @@
    http://snap.stanford.edu/data/amazon/productGraph/categoryFiles/reviews_Kindle_Store_5.json.gz
     
 
-* 7.2 Download Amazon Review file 
+* 8.2 Download Amazon Review file 
     
    Make sure you are in Hadoop-Master bash
    
@@ -34,16 +34,16 @@
    //command to download the file
    ```
    
-* 7.3 Extract the file
+* 8.3 Extract the file
 
 	```
 	#gzip -d reviews_Movies_and_TV_5.json.gz 
 	//command to extract the file
 	```
 	
-## 8. Edit the Map Function and Reduce Function
+## 9. Edit the Map Function and Reduce Function
 
-* 8.1 Edit Map Function
+* 9.1 Edit Map Function
 
 	```
 	#vi map_NLP.py
@@ -56,7 +56,7 @@
 	```
 	copy the code in the map_NLP.py
 	
-* 8.2 Edit Reduce Function
+* 9.2 Edit Reduce Function
 
 	```
 	#vi reduce_NLP.py
@@ -69,7 +69,7 @@
 	```
 	copy the code in the reduce_NLP.py
 	
-* 8.3 Give the permission to running the python file
+* 9.3 Give the permission to running the python file
 	
 	```
 	#chmod u+x map_NLP.py reduce_NLP.py
@@ -81,7 +81,7 @@
 	```
 	If the file has permission, it should be in green color
 	
-* 8.4 Test the code in Master Container Linux
+* 9.4 Test the code in Master Container Linux
 
 	```
 	#head -n 100 reviews_Movies_and_TV_5.json | ./map_NLP.py | sort | ./reduce_NLP.py
@@ -92,18 +92,18 @@
 	In order to run the test code, the command head -n `number` the number should be bigger than the n value in the reduce_NLP.py 
 	
 	
-## 9. Running MapReduce_NLP in Hadoop
+## 10. Running MapReduce_NLP in Hadoop
 
 After change the test, we need to replace the n back to the default value.
 
-* 9.1 Check the location
+* 10.1 Check the location
 
 	```
 	cd ~/NLP
 	//command to change the directory
 	```
 	
-* 9.2 Upload the test file to Hadoop
+* 10.2 Upload the test file to Hadoop
 	
 	`hadoop fs -` is the basic command for Hadoop system
 	```
@@ -111,7 +111,7 @@ After change the test, we need to replace the n back to the default value.
 	//command to input the file to hadoop 
   	```
 	
-* 9.3 Upload the map and reduce to Hadoop
+* 10.3 Upload the map and reduce to Hadoop
 	```
 	#cd ~/nlp
 	//command to open the nlp directory
@@ -120,7 +120,7 @@ After change the test, we need to replace the n back to the default value.
 	#hadoop jar /usr/local/hadoop/share/hadoop/tools/lib/hadoop-streaming-2.7.2.jar -mapper map_NLP.py -reducer reduce_NLP.py -file map_NLP.py -file reduce_NLP.py -input input/reviews_Movies_and_TV_5.json -output outputtest1
 	//command to do MapReduce in hadoop
 	```
-* 9.4 Check the result
+* 10.4 Check the result
 	```
 	#hadoop fs -ls
 	//command to display directory in Hadoop system
