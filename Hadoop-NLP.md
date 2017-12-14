@@ -94,7 +94,7 @@
 	
 ## 10. Running MapReduce_NLP in Hadoop
 
-After change the test, we need to replace the n back to the default value.
+After doing the test, we need to replace the `n` value in the reduce_NLP.py back to the default value.
 
 * 10.1 Check the location
 
