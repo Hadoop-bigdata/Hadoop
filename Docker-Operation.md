@@ -2,8 +2,27 @@
 
 ## Operation in Docker
 
+* 1 Close and reconnect the Dokcer
 	
-* 1 Check Container Status
+	1.1 Close the Docker
+	
+	Every time you finish the job in Hadoop and want to close the docker. 
+	Try the command:
+	```
+	#stop-all.sh
+	//command to stop-all work in hadoop-master container
+	#exit
+	//command to back your local machine system
+	```
+	1.2 Reconnect the Docker
+	
+	```
+	$docker exec -ti hadoop-master bash
+	//command to connect hadoop-master container
+	```
+	After connect to the master container, you can follow the instruction in MapReduce and NLP to do the following step list in the section.
+	
+* 2 Check Container Status
 
 	hadoop-master is the name for the container, you can check it by command 
 	```
@@ -23,7 +42,7 @@
 	//command to start the contianer
 	```
 	
-* 2 Stop Container
+* 3 Stop Container
 	```
 	$docker stop hadoop-master
 	//command to stop for the master
@@ -37,7 +56,7 @@
 	//command to stop for the slave2
 	```
 
-* 3 Start Container
+* 4 Start Container
 	```
 	$docker start hadoop-master
 	//command to start for the msater
@@ -51,7 +70,7 @@
 	//command to start for the slave2
 	```
 	
-* 4 Connect Container
+* 5 Connect Container
 
 	```
 	$docker exec -ti hadoop-master bash
