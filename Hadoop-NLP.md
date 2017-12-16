@@ -53,7 +53,7 @@
 	```
 	type i to insert the command
 	copy the code in the map_NLP.py
-	type command : wq save the file and quit the vim file.
+	type command ESC then :wq save the file and quit the vim file.
 	```
 	
 	
@@ -66,7 +66,7 @@
 	```
 	type i to insert the command
 	copy the code in the reduce_NLP.py
-	type command : wq save the file and quit the vim file.
+	type command ESC then :wq to save the file and quit the vim file.
 	```
 	
 	
