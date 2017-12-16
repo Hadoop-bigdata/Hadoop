@@ -13,8 +13,10 @@
    http://snap.stanford.edu/data/amazon/productGraph/categoryFiles/ 'filename' .json.gz
     
    File name is the file you want to download
+   
    For example:
-   Review Kindle store
+   
+   Review Kindle store:
    http://snap.stanford.edu/data/amazon/productGraph/categoryFiles/reviews_Kindle_Store_5.json.gz
    
 * 8.2 Download Amazon Review file 
@@ -56,7 +58,6 @@
 	type command ESC then :wq save the file and quit the vim file.
 	```
 	
-	
 * 9.2 Edit Reduce Function
 
 	```
@@ -67,8 +68,7 @@
 	type i to insert the command
 	copy the code in the reduce_NLP.py
 	type command ESC then :wq to save the file and quit the vim file.
-	```
-	
+	```	
 	
 * 9.3 Give the permission to running the python file
 	
@@ -85,7 +85,7 @@
 * 9.4 Test the code in Master Container Linux
 
 	```
-	#head -n 100 reviews_Health_and_Personal_Care_5.json | ./map_NLP.py | sort | ./reduce_NLP.py
+	#head -n 15000 reviews_Health_and_Personal_Care_5.json | ./map_NLP.py | sort | ./reduce_NLP.py
 	//command to show the first 50 element in file and use mapper and reducer to get the result
 	```
 	Check the `n value` in reduce_NLP.py.
@@ -118,7 +118,7 @@ After doing the test, we need to replace the `n value` in the reduce_NLP.py back
 	//command to open the NLP directory
 	```
 	```
-	#hadoop jar /usr/local/hadoop/share/hadoop/tools/lib/hadoop-streaming-2.7.2.jar -mapper map_NLP.py -reducer reduce_NLP.py -file map_NLP.py -file reduce_NLP.py -input input/reviews_Health_and_Personal_Care_5.json -output outputtest1
+	#hadoop jar /usr/local/hadoop/share/hadoop/tools/lib/hadoop-streaming-2.7.2.jar -mapper map_NLP.py -reducer reduce_NLP.py -file map_NLP.py -file reduce_NLP.py -input input/reviews_Health_and_Personal_Care_5.json -output NLP_Result
 	//command to do MapReduce in hadoop
 	```
 * 10.4 Check the result
@@ -127,11 +127,11 @@ After doing the test, we need to replace the `n value` in the reduce_NLP.py back
 	//command to display directory in Hadoop system
   	```
   	```
-	#hadoop fs -ls outputtest1
+	#hadoop fs -ls NLP_Result
 	//command to display outputtest directory in Hadoop system
   	```
   	```
-	#hadoop fs -cat outputtest1/part-00000
+	#hadoop fs -cat NLP_Result/part-00000
 	//command to check result for MapReduce
 	```
 
