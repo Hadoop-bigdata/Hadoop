@@ -1,3 +1,5 @@
+![hadoop-elephant_logo](https://user-images.githubusercontent.com/26347639/34073834-0167b5fe-e271-11e7-8974-0f4850969a7b.png)
+
 # Hadoop Tutorial
 
 #### This tutorials helps people who has intesest to learn big data project and want to build Hadoop Distribute File System within Mac or Windonws system.
