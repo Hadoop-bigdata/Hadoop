@@ -4,7 +4,7 @@
 
 * 1.1 Download Docker 
 	
-	Before Download the Docker make sure your computer will support vitrual machine.
+	Before Download the Docker make sure your computer supports vitrual machine.
 
 	For Mac: https://www.docker.com/docker-mac
 	
@@ -14,17 +14,24 @@
 * 1.2 Install Docker on the local machine
 	
 * 1.3 Set up Docker Environment
+
+	For MAC users:
 	
 	First, click on Docker logo next to your time clock, then click on preferences.
 	In the perferences, click on advanced. The Docker default environment CPUs is 2 and Memory is 2GB.
 	
 	For running the Hadoop, I update the CPUs to 4 and Memory to 6GB for my computer.
 	However, the Docker preferences depends on your computer.
-	The more Memory and CPUs you give to Docker, the faster running speed you have. If the Docker is not running properly, 		givng more Memory and CPUs can potentially solve the problem.
+	The more Memory and CPUs you give to Docker, the faster running speed you have. 
+	If the Docker is not running properly, giving more Memory and CPUs can potentially solve the problem.
+	
+	For Windows users:
+	
+	Find location, how to set up 
 	
 ## 2. Pull Hadoop Image in Docker
 
-After install Docker on the local machine, you need to open the terminal (for mac) or command line (for Windows)
+After install Docker on the local machine, you need to open the terminal (for MAC) or command line (for Windows)
 	
 * 2.1 Pull Hadoop Image
 	
@@ -42,6 +49,7 @@ After install Docker on the local machine, you need to open the terminal (for ma
 	
 	```
 	$git clone https://github.com/Hadoop-bigdata/Hadoop.git
+	//command to download the github file into local machine
 	```
 	For the Mac users, if you meet the error
 	```
@@ -61,5 +69,5 @@ After install Docker on the local machine, you need to open the terminal (for ma
 
 	```
 	$docker network create --driver=bridge hadoop
- 	//command to connect the master container with slave container
+ 	//command to create the network to connect the master container with slave container
 	```
