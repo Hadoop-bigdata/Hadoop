@@ -10,7 +10,7 @@ The overview gives the briefly introduction on our project. It contains the desc
 
 https://github.com/Hadoop-bigdata/Hadoop/edit/master/Overview.md
 
-## The project is split into four part:
+## The project is splited into four part:
 
 #### First part: Installation
 
