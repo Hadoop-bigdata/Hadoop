@@ -6,9 +6,9 @@
 
 	```
 	$docker run -ti --name hadoop kiwenlau/hadoop:1.0
-	//
+	//command to run the kiwenlau images
 	```
-	Due to the Hadoop image is out of date, we need to do some update to set up the environment.
+	Due to the Hadoop image is out of date, we need to do some update to set up the environment for our project.
 	
 * 3.2 Update Image
 
@@ -49,9 +49,9 @@
 	Reference https://en.wikipedia.org/wiki/Pip_(package_manager)
 	```
 	#wget https://bootstrap.pypa.io/get-pip.py
-	//command to download get pip.py 
+	//command to download get-pip.py file
 	#python get-pip.py
-	//command to get-pip file
+	//command to install get-pip.py
 	```
 	
 	3.2.5 Install Numpy
