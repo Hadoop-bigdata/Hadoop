@@ -2,7 +2,7 @@
 
 #### This tutorials helps people who has intesest to learn big data project and want to build Hadoop Distribute File System within Mac or Windonws system.
 
-#### The project include the overview and four part of tutorial introduction: 
+#### The project include the overview and four parts of tutorial introduction: 
 
 #### Overview
 
