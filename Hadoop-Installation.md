@@ -62,6 +62,6 @@ After install Docker on the local machine, you need to open the terminal (for ma
 * 2.3 Connect the Hadoop Network
 
 	```
-	$docker network create --driver=bridge Hadoop
+	$docker network create --driver=bridge hadoop
  	//command to connect the master container with slave container
 	```
