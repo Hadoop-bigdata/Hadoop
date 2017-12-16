@@ -128,7 +128,7 @@ After doing the test, we need to replace the `n value` in the reduce_NLP.py back
   	```
   	```
 	#hadoop fs -ls NLP_Result
-	//command to display outputtest directory in Hadoop system
+	//command to display NLP_Result directory in Hadoop system
   	```
   	```
 	#hadoop fs -cat NLP_Result/part-00000
