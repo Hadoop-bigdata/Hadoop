@@ -122,6 +122,8 @@
 	```
 	$cd hadoop
 	//command to find the hadoop file which we download from github
+	$cd CODE
+	//command to get CODE file
 	$ vi start-container.sh
 	//command to check code
 	```
