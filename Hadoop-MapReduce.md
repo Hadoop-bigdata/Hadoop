@@ -55,10 +55,10 @@
 	```	
  	```
 	type i to insert the command
-	add the command at the bottom of the core-site.xml file
+	copy the code in the map.py
 	type command : wq save the file and quit the vim file.
 	```
-	copy the code in the map.py
+	
 	
 * 6.2 Edit Reduce Function
 
@@ -68,10 +68,10 @@
 	```
 	```
 	type i to insert the command
-	add the command at the bottom of the core-site.xml file
+	copy the code in the reduce.py
 	type command : wq save the file and quit the vim file.
 	```
-	copy the code in the reduce.py
+	
 	
 * 6.3 Give the permission to running the python file
 	
