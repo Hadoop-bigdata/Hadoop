@@ -115,7 +115,7 @@ After doing the test, we need to replace the `n value` in the reduce_NLP.py back
 * 10.3 Upload the map and reduce to Hadoop
 	```
 	#cd ~/NLP
-	//command to open the nlp directory
+	//command to open the NLP directory
 	```
 	```
 	#hadoop jar /usr/local/hadoop/share/hadoop/tools/lib/hadoop-streaming-2.7.2.jar -mapper map_NLP.py -reducer reduce_NLP.py -file map_NLP.py -file reduce_NLP.py -input input/reviews_Health_and_Personal_Care_5.json -output outputtest1
