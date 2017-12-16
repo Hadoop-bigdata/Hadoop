@@ -64,4 +64,6 @@ Appendix gives the basic operation command in Docker to help people connect the 
 https://github.com/Hadoop-bigdata/Hadoop/blob/master/Docker-Operation.md
 
 
-Picture Reference https://user-images.githubusercontent.com/26347639/34073834-0167b5fe-e271-11e7-8974-0f4850969a7b.png
+Picture Reference 
+
+https://user-images.githubusercontent.com/26347639/34073834-0167b5fe-e271-11e7-8974-0f4850969a7b.png
