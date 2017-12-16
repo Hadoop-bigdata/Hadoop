@@ -4,7 +4,9 @@
 
 #### The project include: 
 
-#### Overview 
+#### Overview
+
+The overview gives the briefly introduction on our project. It contains the description of software (Docker) and technology (Hadoop, MapReduce) in the project. 
 
 #### First part: Installation
 
