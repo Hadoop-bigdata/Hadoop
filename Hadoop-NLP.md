@@ -22,14 +22,16 @@
    Make sure you are in Hadoop-Master bash
    
    ```
-   mkdir NLP
+   #cd ~
+   //command to go back home directory
+   #mkdir NLP
    //command to create new directory for Nature Language Process
-   cd NLP
+   #cd NLP
    //command to change directory
    ``` 
    For this project, we will use Health_and_Personal_Care_5.json as our dataset.
    ```
-   wget http://snap.stanford.edu/data/amazon/productGraph/categoryFiles/reviews_Health_and_Personal_Care_5.json.gz
+   #wget http://snap.stanford.edu/data/amazon/productGraph/categoryFiles/reviews_Health_and_Personal_Care_5.json.gz
    //command to download the file
    ```
    
