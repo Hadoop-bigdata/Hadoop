@@ -70,7 +70,7 @@
 	//command to start for the slave2
 	```
 	
-* 5. Connect Container
+* 5 Connect Container
 
 	```
 	$docker exec -ti hadoop-master bash
