@@ -50,10 +50,10 @@
 	```
 	```
 	type i to insert the command
-	add the command at the bottom of the core-site.xml file
+	copy the code in the map_NLP.py
 	type command : wq save the file and quit the vim file.
 	```
-	copy the code in the map_NLP.py
+	
 	
 * 9.2 Edit Reduce Function
 
@@ -63,10 +63,10 @@
 	```
 	```
 	type i to insert the command
-	add the command at the bottom of the core-site.xml file
+	copy the code in the reduce_NLP.py
 	type command : wq save the file and quit the vim file.
 	```
-	copy the code in the reduce_NLP.py
+	
 	
 * 9.3 Give the permission to running the python file
 	
