@@ -139,7 +139,7 @@
 
 	After type command `./start-container.sh`, you already in the linux system
 	```
-	#start-hadoop.sh
+	#./start-hadoop.sh
 	//command to run hadoop
 	```
 	
