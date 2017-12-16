@@ -8,6 +8,7 @@ Apache Hadoop is an open source software framework. It provides a distributed en
 MapReduce is a technique for distributed computing. Two main tasks are contained here: Map and Reduce. The Map comes before Reduce. Map basically converts a dataset to a set of data containing tuples(key/value) of single element. After Map finishes its job. Reduce takes the output to combine them into smaller number of tuples.
 
 ![199q1](https://user-images.githubusercontent.com/26347639/34073857-a2c31b50-e271-11e7-930c-af160e74a461.png)
+https://user-images.githubusercontent.com/26347639/34073857-a2c31b50-e271-11e7-930c-af160e74a461.png
 
 #### Docker
 
