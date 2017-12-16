@@ -20,7 +20,7 @@
 	
 	For running the Hadoop, I update the CPUs to 4 and Memory to 6GB for my computer.
 	However, the Docker preferences depends on your computer.
-	The more Memory and CPUs you give to Docker, the faster running speed you have. 
+	The more Memory and CPUs you give to Docker, the faster running speed you have. If the Docker is not running properly, 		givng more Memory and CPUs can potentially solve the problem.
 	
 ## 2. Pull Hadoop Image in Docker
 
