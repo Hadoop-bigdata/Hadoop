@@ -108,7 +108,7 @@ After doing the test, we need to replace the `n value` in the reduce_NLP.py back
 	
 	`hadoop fs -` is the basic command for Hadoop system
 	```
-	#hadoop fs -put reviews_Kindle_Store_5.json input/
+	#hadoop fs -put reviews_Kindle_Store_5.json input
 	//command to input the file to hadoop 
   	```
 	
