@@ -1,14 +1,16 @@
 # Hadoop Tutorial
 
-#### This reports helps people who has intesest to learn big data project and want to build Hadoop Distribute File System within Mac or Windonws system.
+#### This tutorials helps people who has intesest to learn big data project and want to build Hadoop Distribute File System within Mac or Windonws system.
 
 #### The project include: 
 
 #### Overview
 
-The overview gives the briefly introduction on our project. It contains the description of software (Docker) and technology (Hadoop, MapReduce) in the project. 
+The overview gives the briefly introduction on our project. It contains the description of software (Docker) and technology (Hadoop, MapReduce). 
 
 https://github.com/Hadoop-bigdata/Hadoop/edit/master/Overview.md
+
+## The project is split into four part:
 
 #### First part: Installation
 
@@ -30,12 +32,12 @@ https://github.com/Hadoop-bigdata/Hadoop/blob/master/Hadoop-Environment.md
 4. Create new Hadoop Image
 ```
 
-#### Third part: Test MapReduce in Hadoop 
+#### Third part: Total Purchases  
 
 https://github.com/Hadoop-bigdata/Hadoop/blob/master/Hadoop-MapReduce.md
 
 ```
-5. Download the Test Dataset
+5. Download the Purchases Dataset
 
 6. Edit Map and Reduce Function
 
