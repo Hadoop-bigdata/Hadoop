@@ -58,4 +58,6 @@ https://github.com/Hadoop-bigdata/Hadoop/blob/master/Hadoop-NLP.md
 
 ### Appendix: Operation Command in Docker
 
+Appendix gives the basic operation command in Docker to help people connect the different containers.
+
 https://github.com/Hadoop-bigdata/Hadoop/blob/master/Docker-Operation.md
