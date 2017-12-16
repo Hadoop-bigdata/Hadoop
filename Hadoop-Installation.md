@@ -18,16 +18,18 @@
 	For MAC users:
 	
 	First, click on Docker logo next to your time clock, then click on preferences.
-	In the perferences, click on advanced. The Docker default environment CPUs is 2 and Memory is 2GB.
-	
-	For running the Hadoop, I update the CPUs to 4 and Memory to 6GB for my computer.
-	However, the Docker preferences depends on your computer.
-	The more Memory and CPUs you give to Docker, the faster running speed you have. 
-	If the Docker is not running properly, giving more Memory and CPUs can potentially solve the problem.
+	In the perferences, click on advanced. 
 	
 	For Windows users:
 	
-	Find location, how to set up 
+	We can find the docker logo in the bottom right of the screen, which is also next to your time clock. 
+	And then we right click the docker logo, selcet the "Settings", and the click on the "Advanced".
+	
+	The Docker's default environment CPUs is 2 and Memory is 2GB, while for Hadoop we need to at least
+	update the CPUs to 4 and Memory to 4GB for computer.
+	Please notice that the Docker preferences depends on your computer.
+	The more Memory and CPUs you give to Docker, the faster running speed you have. 
+	If the Docker is not running properly, giving more Memory and CPUs can potentially solve the problem.
 	
 ## 2. Pull Hadoop Image in Docker
 
