@@ -114,7 +114,7 @@ After doing the test, we need to replace the `n value` in the reduce_NLP.py back
 	
 * 10.3 Upload the map and reduce to Hadoop
 	```
-	#cd ~/nlp
+	#cd ~/NLP
 	//command to open the nlp directory
 	```
 	```
