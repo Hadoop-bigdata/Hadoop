@@ -56,7 +56,7 @@
  	```
 	type i to insert the command
 	copy the code in the map.py
-	type command : wq save the file and quit the vim file.
+	type command ESC then :wq to save the file and quit the vim file.
 	```
 	
 	
@@ -69,7 +69,7 @@
 	```
 	type i to insert the command
 	copy the code in the reduce.py
-	type command : wq save the file and quit the vim file.
+	type command ESC then :wq to save the file and quit the vim file.
 	```
 	
 	
