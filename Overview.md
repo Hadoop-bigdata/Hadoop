@@ -6,7 +6,7 @@ Apache Hadoop is an open source software framework. It provides a distributed en
 
 #### HDFS
 
-HDFS is a highly fault tolerence file system and it is designed for commodity use. The main architecture includes namenode, datanode and block. Namenode acts as the matser server. It manages the file system namespace. The datanode manages the data storage. And each file is divided into certain number of blocks.  
+HDFS is a highly fault tolerence file system and it is designed for commodity use. The main architecture includes namenode, datanode and block. Namenode acts as the matser server. It manages the file system namespace. The datanode manages the data storage. And each file is divided into certain number of blocks. Each block contains a piece of information.
 
 ![hdfsarchitecture](https://user-images.githubusercontent.com/33606250/34073944-694f72e0-e273-11e7-98e9-a4d40a3dada1.gif)
 https://user-images.githubusercontent.com/33606250/34073944-694f72e0-e273-11e7-98e9-a4d40a3dada1.gif
@@ -19,6 +19,8 @@ MapReduce is a technique for distributed computing. Two main tasks are contained
 https://user-images.githubusercontent.com/26347639/34073857-a2c31b50-e271-11e7-930c-af160e74a461.png
 
 #### Docker
+
+Docker is a software providing the containers. It can help local computer set up the virtual environment. To our project specifically, it is used to take a certain percent of CPU and space from the local computer to set up one master and two slaves. It also provides the Linux running environment for Hadoop. 
 
 
 
