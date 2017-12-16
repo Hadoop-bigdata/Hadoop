@@ -15,8 +15,6 @@
 	
 * 1.3 Set up Docker Environment
 	
-	For Mac:
-	
 	First, click on Docker logo next to your time clock, then click on preferences.
 	In the perferences, click on advanced. The Docker default environment CPUs is 2 and Memory is 2GB.
 	
