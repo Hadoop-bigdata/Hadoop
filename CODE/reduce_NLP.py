@@ -102,4 +102,4 @@ print("For rating 4, the accuracy is " + format(acc4, '0.2f'))
 print("For rating 5, the accuracy is " + format(acc5, '0.2f'))
 
 # save score as ouput
-print("The final accurary is "+ format(score, '0.3f')
+print("The final accurary is "+ format(score, '0.3f'))
