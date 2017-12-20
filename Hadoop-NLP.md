@@ -138,9 +138,9 @@ After doing the test, we need to replace the `n value` in the reduce_NLP.py back
 	
 ## 11. Running MapReduce_NLP_2 in Hadoop
 
-After doing the test, we need to replace the `n value` in the reduce_NLP.py back to the default value.
+We provide another solution to do the sentiment analysis, which could get higher accuracy but longer running time.
 
-* 10.1 Split the traning set from your whole data set
+* 11.1 Split the traning set from your whole data set
 
 	```
 	#cd ~/NLP
@@ -148,11 +148,11 @@ After doing the test, we need to replace the `n value` in the reduce_NLP.py back
 	//take first 50000 rows as training data
 	```
 	
-* 10.2 Copy our CODE/map_NLP_2.py and  reduce_NLP_2.py to your testing(current) directory
+* 11.2 Copy our CODE/map_NLP_2.py and  reduce_NLP_2.py to your testing(current) directory
        Just similar what you did in step 9.1 and 9.2
 
 	
-* 10.3 Upload the map and reduce to Hadoop
+* 11.3 Upload the map and reduce to Hadoop
 	```
 	#cd ~/NLP
 	//command to open the NLP directory
@@ -161,7 +161,7 @@ After doing the test, we need to replace the `n value` in the reduce_NLP.py back
 	#hadoop jar /usr/local/hadoop/share/hadoop/tools/lib/hadoop-streaming-2.7.2.jar -mapper map_NLP_2.py -reducer reduce_NLP_2.py -file map_NLP_2.py -file reduce_NLP_2.py file train -input input/reviews_Health_and_Personal_Care_5.json -output NLP2_Result
 	//command to do MapReduce in hadoop
 	```
-* 10.4 Check the result
+* 11.4 Check the result
 
   	```
 	#hadoop fs -cat NLP2_Result/part-00000
