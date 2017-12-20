@@ -158,7 +158,7 @@ We provide another solution to do the sentiment analysis, which could get higher
 	//command to open the NLP directory
 	```
 	```
-	#hadoop jar /usr/local/hadoop/share/hadoop/tools/lib/hadoop-streaming-2.7.2.jar -mapper map_NLP_2.py -reducer reduce_NLP_2.py -file map_NLP_2.py -file reduce_NLP_2.py file train -input input/reviews_Health_and_Personal_Care_5.json -output NLP2_Result
+	#hadoop jar /usr/local/hadoop/share/hadoop/tools/lib/hadoop-streaming-2.7.2.jar -mapper map_NLP_2.py -reducer reduce_NLP_2.py -file map_NLP_2.py -file reduce_NLP_2.py -file train -input input/reviews_Health_and_Personal_Care_5.json -output NLP2_Result
 	//command to do MapReduce in hadoop
 	```
 * 11.4 Check the result
