@@ -1,5 +1,5 @@
 # Set up Enviroment
-
+Even though we have already finished install the hadoop images, there are still a lot of work to set up our environment in order to get the necessary software and packages for future running.
 ## 3. Update Image 
 
 * 3.1 Connect the Image
