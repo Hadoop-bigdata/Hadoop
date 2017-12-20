@@ -87,6 +87,7 @@ y_pred = rf.predict(test_x)
 
 # get the accuracy between ture rate and predict rate
 score = metrics.accuracy_score(test_y,y_pred)
+matrix = metrics.confusion_matrix(true,pred)
 
 # change the format of ture rate and predict rate
 ypred = pd.DataFrame(y_pred)
@@ -95,11 +96,7 @@ testy = pd.DataFrame(test_y)
 # get the accuracy for each value 
 acc1, acc2, acc3, acc4, acc5 = countnum(testy, ypred)
 
-print("For rating 1, the accuracy is " + format(acc1, '0.2f'))
-print("For rating 2, the accuracy is " + format(acc2, '0.2f'))
-print("For rating 3, the accuracy is " + format(acc3, '0.2f'))
-print("For rating 4, the accuracy is " + format(acc4, '0.2f'))
-print("For rating 5, the accuracy is " + format(acc5, '0.2f'))
+print(matrix)
 
 # save score as ouput
 print("The final accurary is "+ format(score, '0.3f'))
