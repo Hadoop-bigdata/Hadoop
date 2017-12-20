@@ -42,7 +42,7 @@ https://github.com/Hadoop-bigdata/Hadoop/blob/master/Hadoop-MapReduce.md
 
 6. Edit Map and Reduce Function
 
-7. Runing the Mapreduce in Hadoop
+7. Running the Mapreduce in Hadoop
 ```
 
 #### Fourth part: Nature Language Processing on Amazon Review
@@ -54,7 +54,9 @@ https://github.com/Hadoop-bigdata/Hadoop/blob/master/Hadoop-NLP.md
 
 9. Edit Map and Reduce Function
 
-10. Runing the Mapreduce in Hadoop
+10. Running the Mapreduce in Hadoop based on vader sentiment
+
+11. Running the Mapreduce in Hadoop based on Bag of word
 ```
 
 ### Appendix: Operation Command in Docker
