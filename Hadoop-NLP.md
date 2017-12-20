@@ -145,7 +145,7 @@ We provide another solution to do the sentiment analysis, which could get higher
 	```
 	#cd ~/NLP
 	head -n 50000 reviews_Health_and_Personal_Care_5.json > train
-	//take first 50000 rows as training data
+	//command to take first 50000 rows as training data
 	```
 	
 * 11.2 Copy our CODE/map_NLP_2.py and  reduce_NLP_2.py to your testing(current) directory
