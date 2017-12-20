@@ -16,7 +16,7 @@ test = []
 corpus = []
 
 # set your own training file
-for line in open('1', 'r'):
+for line in open('train', 'r'):
     train_json = eval(eval(json.dumps(line))[:-1])
     train.append(train_json)
     
