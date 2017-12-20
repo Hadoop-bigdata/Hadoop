@@ -9,7 +9,7 @@
 	#cd ~                   
 	//command to go back to the home directory
 	#mkdir test             
-	//command to create new directory name test
+	//command to create new directory name test 
 	#cd test                
 	//command to open the test directory
 	```
