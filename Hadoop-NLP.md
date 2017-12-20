@@ -140,15 +140,16 @@ After doing the test, we need to replace the `n value` in the reduce_NLP.py back
 
 After doing the test, we need to replace the `n value` in the reduce_NLP.py back to the default value.
 
-* 10.1 split the traning set from your whole data set
+* 10.1 Split the traning set from your whole data set
 
 	```
+	#cd ~/NLP
 	head -n 50000 reviews_Health_and_Personal_Care_5.json > train
-	//take 
+	//take first 50000 rows as training data
 	```
 	
-* 10.2 copy our CODE/map_NLP_2.py and  reduce_NLP_2.py to your testing(current) directory, just similar
-	what you did in step 9.1 and 9.2
+* 10.2 Copy our CODE/map_NLP_2.py and  reduce_NLP_2.py to your testing(current) directory
+       Just similar what you did in step 9.1 and 9.2
 
 	
 * 10.3 Upload the map and reduce to Hadoop
@@ -161,14 +162,7 @@ After doing the test, we need to replace the `n value` in the reduce_NLP.py back
 	//command to do MapReduce in hadoop
 	```
 * 10.4 Check the result
-	```
-	#hadoop fs -ls
-	//command to display directory in Hadoop system
-  	```
-  	```
-	#hadoop fs -ls NLP2_Result
-	//command to display NLP_Result directory in Hadoop system
-  	```
+
   	```
 	#hadoop fs -cat NLP2_Result/part-00000
 	//command to check result for MapReduce
