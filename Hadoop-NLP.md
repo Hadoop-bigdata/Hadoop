@@ -1,5 +1,7 @@
 # Nature Language Processing on Amazon Review
-   
+
+## In this part, we want to predict the rating value (overall) based on the new review.
+
 ## 8. Download Amazon Review 
 
 * 8.1 Review Amazon Review Website  
