@@ -61,7 +61,9 @@ https://github.com/Hadoop-bigdata/Hadoop/blob/master/Hadoop-NLP.md
 Workflow the MapReduce in Bag of word
 
 ![screen shot 2017-12-20 at 21 43 55](https://user-images.githubusercontent.com/26347639/34238318-fd67d6da-e5ce-11e7-943c-1f0f32e06814.png)
+
 Workflow the MapReduce in vader sentiment
+
 ![screen shot 2017-12-20 at 21 37 49](https://user-images.githubusercontent.com/26347639/34238339-1ae3df42-e5cf-11e7-9a8f-beaedaedcf43.png)
 
 ### Appendix: Operation Command in Docker
