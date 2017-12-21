@@ -6,12 +6,13 @@ import sys
 from sklearn import metrics
 
 
-
+# initiate the list
 pred = []
 true = []
 
 for line in sys.stdin:
     
+    # get the dictionary
     data = eval(line)
     #print(data)
     
@@ -25,6 +26,7 @@ for line in sys.stdin:
     true.append(t)
 
 
+# output the accuracy and confusion matrix
 score = metrics.accuracy_score(true,pred)
 matrix = metrics.confusion_matrix(true,pred)
 print(score)
