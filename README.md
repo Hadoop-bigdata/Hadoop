@@ -58,7 +58,9 @@ https://github.com/Hadoop-bigdata/Hadoop/blob/master/Hadoop-NLP.md
 
 11. Running the Mapreduce in Hadoop based on Bag of word
 ```
+Workflow the MapReduce in vader sentiment
 ![screen shot 2017-12-20 at 21 36 48](https://user-images.githubusercontent.com/26347639/34238129-2baa18a6-e5ce-11e7-9a1d-14c81c8a5e7e.png)
+Workflow the MapReduce in Bag of word
 ![screen shot 2017-12-20 at 21 37 49](https://user-images.githubusercontent.com/26347639/34238149-3e14fe52-e5ce-11e7-92cd-e929554deacf.png)
 
 ### Appendix: Operation Command in Docker
