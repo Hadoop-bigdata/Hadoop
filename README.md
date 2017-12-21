@@ -10,7 +10,7 @@
 
 The overview gives the briefly introduction on our project. It contains the description of software (Docker) and technology (Hadoop, MapReduce). 
 
-https://github.com/Hadoop-bigdata/Hadoop/edit/master/Overview.md
+https://github.com/Hadoop-bigdata/Hadoop/blob/master/Overview.md
 
 
 #### First part: Installation
