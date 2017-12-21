@@ -145,7 +145,7 @@ Even though we have already finished install the hadoop images, there are still 
 	
 * 4.4 Word-count in Hadoop
 
-	Thanks to kiwenlau, he already gives us a test code for testing the hadoop environment
+	Thanks to kiwenlau. He has already given us a test code for testing the hadoop environment
 	```
 	#./run-wordcount.sh
 	//command to run wordcount
