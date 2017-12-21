@@ -1,6 +1,6 @@
 # Nature Language Processing on Amazon Review
 
-## In this part, we want to predict the rating value (overall) based on the new review.
+#### In this part, we want to predict the rating value (overall) based on the new review coming into our dataset.
 
 ## 8. Download Amazon Review 
 
