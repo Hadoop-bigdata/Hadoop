@@ -9,8 +9,7 @@ from sklearn.feature_extraction.text import TfidfTransformer
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.ensemble import RandomForestClassifier
 
-
-
+#create the empty list
 train = []
 test = []
 corpus = []
@@ -19,7 +18,8 @@ corpus = []
 for line in open('train', 'r'):
     train_json = eval(eval(json.dumps(line))[:-1])
     train.append(train_json)
-    
+
+#readfile
 df = pd.DataFrame.from_dict(train)
 train_feature = df.summary
 train_label = df.overall
