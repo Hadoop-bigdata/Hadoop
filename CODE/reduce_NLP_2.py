@@ -21,7 +21,7 @@ for line in sys.stdin:
     t = data.pop("true")
 
     
-
+    #append the value into list
     pred.append(p)
     true.append(t)
 
