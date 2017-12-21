@@ -41,7 +41,7 @@ After install Docker on the local machine, you need to open the terminal (for MA
 	$docker pull kiwenlau/hadoop:1.0
 	//command to pull Hadoop image into Docker
 	```
-	Thanks to kiwenlau who already build the Hadoop image in docker.
+	Thanks to kiwenlau who has already built the Hadoop image in docker.
 	
 	Reference: https://github.com/kiwenlau/hadoop-cluster-docker
 	
