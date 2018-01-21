@@ -103,6 +103,19 @@ Even though we have already finished install the hadoop images, there are still 
 	#pip install vaderSentiment
 	//command to install vaderSentiment
 	```
+	3.2.10 Install jupyter
+	
+	```
+	#apt-get install build-essential python-dev
+	//required function
+	```
+	
+	And then install the jupyter
+	```
+	#pip install jupyter
+	//command to install scipy
+	```
+	
 
 ## 4. Create new Hadoop Image
 
